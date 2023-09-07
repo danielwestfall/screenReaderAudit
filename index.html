@@ -255,17 +255,20 @@
     </header>
 
     <main>
+      <!--Page Title-->
       <section
         class="mydiv hidden row gy-3"
         id="title"
         aria-labelledby="pageTitleHeader"
       >
-        <h2 id="pageTitleHeader">Page Title</h2>
+        <h2 id="titleHeader" id="pageTitleHeader">Page Title</h2>
 
         <!-- Page Title -->
 
         <div class="form-check">
-          <div class="prompt">Page title is present and contains text</div>
+          <div id="titleP1" class="prompt">
+            Page title is present and contains text
+          </div>
 
           <input
             class="form-check-input"
@@ -286,7 +289,9 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">Page Title changes when URL changes</div>
+          <div id="titleP2" class="prompt">
+            Page Title changes when URL changes
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -306,7 +311,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="titleP3" class="prompt">
             Page Title Matches or corresponds to the H1 and page content
           </div>
           <input
@@ -327,14 +332,17 @@
           <label class="form-check-label" for="titleQ3b"> Non-compliant </label>
         </div>
         <div class="input-group">
-          <span class="input-group-text">Page Title: Comments</span>
+          <span id="titleP4" class="input-group-text"
+            >Page Title: Comments</span
+          >
           <textarea
             class="form-control"
             aria-label="Comments on page title"
+            id="titleComments"
           ></textarea>
         </div>
       </section>
-
+      <!--Headings-->
       <section
         class="mydiv hidden row gy-3"
         id="headers"
@@ -345,7 +353,7 @@
         <!-- Headings -->
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="headingsP1" class="prompt">
             Headings are accurate, informative, and concise
           </div>
           <input
@@ -369,7 +377,9 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">Headings convey the content's structure</div>
+          <div id="headingsP2" class="prompt">
+            Headings convey the content's structure
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -391,7 +401,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="headingsP3" class="prompt">
             Headings don't skip levels and have proper nesting
           </div>
           <input
@@ -415,7 +425,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">Headings start with a H1</div>
+          <div id="headingsP4" class="prompt">Headings start with a H1</div>
           <input
             class="form-check-input"
             type="radio"
@@ -437,7 +447,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">There is only 1 H1</div>
+          <div id="headingsP5" class="prompt">There is only 1 H1</div>
           <input
             class="form-check-input"
             type="radio"
@@ -459,14 +469,17 @@
         </div>
 
         <div class="input-group">
-          <span class="input-group-text">Page Headings: Comments</span>
+          <span id="headingsP6" class="input-group-text"
+            >Page Headings: Comments</span
+          >
           <textarea
             class="form-control"
             aria-label="Comments on page headings"
+            id="headingComments"
           ></textarea>
         </div>
       </section>
-
+      <!--Links and Buttons-->
       <section
         class="mydiv hidden row gy-3"
         id="linkButton"
@@ -476,7 +489,9 @@
 
         <!-- Links-->
         <div class="form-check">
-          <div class="prompt">Links are semantically designated as such</div>
+          <div id="linkP1" class="prompt">
+            Links are semantically designated as such
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -491,13 +506,12 @@
             type="radio"
             name="linkQ1"
             id="linkQ1b"
-            
           />
           <label class="form-check-label" for="linkQ1b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="linkP2" class="prompt">
             Links and buttons should be designated by their functions
           </div>
           <input
@@ -514,13 +528,12 @@
             type="radio"
             name="linkQ2"
             id="linkQ2b"
-            
           />
           <label class="form-check-label" for="linkQ2b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="linkP3" class="prompt">
             Links must have programmatically discernible text
           </div>
           <input
@@ -537,13 +550,12 @@
             type="radio"
             name="linkQ3"
             id="linkQ3b"
-            
           />
           <label class="form-check-label" for="linkQ3b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="linkP4" class="prompt">
             Link purpose should be determinable by link text alone
           </div>
           <input
@@ -560,13 +572,14 @@
             type="radio"
             name="linkQ4"
             id="linkQ4b"
-            
           />
           <label class="form-check-label" for="linkQ4b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">Link text should not state “link”</div>
+          <div id="linkP5" class="prompt">
+            Link text should not state “link”
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -581,13 +594,12 @@
             type="radio"
             name="linkQ5"
             id="linkQ5b"
-            
           />
           <label class="form-check-label" for="linkQ5b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="linkP6" class="prompt">
             Features such as labels, names, and text alternatives should be
             consistent throughout the site
           </div>
@@ -605,13 +617,12 @@
             type="radio"
             name="linkQ6"
             id="linkQ6b"
-            
           />
           <label class="form-check-label" for="linkQ6b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="linkP7" class="prompt">
             Links must be visually distinguishable from plain text
           </div>
           <input
@@ -628,13 +639,12 @@
             type="radio"
             name="linkQ7"
             id="linkQ7b"
-            
           />
           <label class="form-check-label" for="linkQ7b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="linkP8" class="prompt">
             Must have a visual focus indicator when in focus
           </div>
           <input
@@ -651,20 +661,22 @@
             type="radio"
             name="linkQ8"
             id="linkQ8b"
-            
           />
           <label class="form-check-label" for="linkQ8b"> Non-compliant </label>
         </div>
 
         <div class="input-group">
-          <span class="input-group-text">Links and Buttons: Comments</span>
+          <span id="linkP9" class="input-group-text"
+            >Links and Buttons: Comments</span
+          >
           <textarea
             class="form-control"
             aria-label="Comments on links and buttons"
+            id="linkComments"
           ></textarea>
         </div>
       </section>
-
+      <!--Docs-->
       <section
         class="mydiv hidden row gy-3"
         id="downloads"
@@ -675,7 +687,7 @@
         <!-- Downloadable docs -->
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="docsP1" class="prompt">
             An HTML version of non-HTML content SHOULD be made available to
             users.
           </div>
@@ -693,13 +705,12 @@
             type="radio"
             name="docsQ1"
             id="docsQ1b"
-            
           />
           <label class="form-check-label" for="docsQ1b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="docsP2" class="prompt">
             Non-HTML documents MUST adhere to basic accessibility principles.
           </div>
           <input
@@ -716,13 +727,14 @@
             type="radio"
             name="docsQ2"
             id="docsQ2b"
-            
           />
           <label class="form-check-label" for="docsQ2b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">PDFs files are in tagged PDF format.</div>
+          <div id="docsP3" class="prompt">
+            PDFs files are in tagged PDF format.
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -737,20 +749,22 @@
             type="radio"
             name="docsQ3"
             id="docsQ3b"
-            
           />
           <label class="form-check-label" for="docsQ3b"> False </label>
         </div>
 
         <div class="input-group">
-          <span class="input-group-text">Downloadable Documents: Comments</span>
+          <span id="docsP4" class="input-group-text"
+            >Downloadable Documents: Comments</span
+          >
           <textarea
             class="form-control"
             aria-label="Comments on downloadable documents"
+            id="docsComments"
           ></textarea>
         </div>
       </section>
-
+      <!--Forms-->
       <section
         class="mydiv hidden row gy-3"
         id="formz"
@@ -760,10 +774,12 @@
 
         <!-- Forms -->
 
-        <h3>Form Labels</h3>
+        <h3 id="formsHeader1">Form Labels</h3>
 
         <div class="form-check">
-          <div class="prompt">Labels are programmatically-discernible.</div>
+          <div id="formsP1" class="prompt">
+            Labels are programmatically-discernible.
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -778,13 +794,12 @@
             type="radio"
             name="formsQ1"
             id="formsQ1b"
-            
           />
           <label class="form-check-label" for="formsQ1b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">Labels are be meaningful.</div>
+          <div id="formsP2" class="prompt">Labels are be meaningful.</div>
           <input
             class="form-check-input"
             type="radio"
@@ -799,13 +814,12 @@
             type="radio"
             name="formsQ2"
             id="formsQ2b"
-            
           />
           <label class="form-check-label" for="formsQ2b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP3" class="prompt">
             Placeholder text is not the only method of providing a label for a
             text input.
           </div>
@@ -823,13 +837,12 @@
             type="radio"
             name="formsQ3"
             id="formsQ3b"
-            
           />
           <label class="form-check-label" for="formsQ3b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP4" class="prompt">
             Labels are adjacent in the DOM to its corresponding element.
           </div>
           <input
@@ -846,13 +859,12 @@
             type="radio"
             name="formsQ4"
             id="formsQ4b"
-            
           />
           <label class="form-check-label" for="formsQ4b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP5" class="prompt">
             When multiple labels are used for one element, each label MUST be
             programmatically associated with the corresponding element.
           </div>
@@ -870,13 +882,12 @@
             type="radio"
             name="formsQ5"
             id="formsQ5b"
-            
           />
           <label class="form-check-label" for="formsQ5b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP6" class="prompt">
             When one label is used for multiple elements, the label MUST be
             programmatically associated with each of the corresponding elements.
           </div>
@@ -894,13 +905,12 @@
             type="radio"
             name="formsQ6"
             id="formsQ6b"
-            
           />
           <label class="form-check-label" for="formsQ6b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP7" class="prompt">
             Group labels MUST be programmatically-associated with the group if
             the individual labels for each element in the group are insufficient
             on their own.
@@ -919,13 +929,12 @@
             type="radio"
             name="formsQ7"
             id="formsQ7b"
-            
           />
           <label class="form-check-label" for="formsQ7b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP8" class="prompt">
             Group labels MUST be programmatically-discernible.
           </div>
           <input
@@ -942,13 +951,14 @@
             type="radio"
             name="formsQ8"
             id="formsQ8b"
-            
           />
           <label class="form-check-label" for="formsQ8b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">Group labels MUST be meaningful.</div>
+          <div id="formsP9" class="prompt">
+            Group labels MUST be meaningful.
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -963,15 +973,14 @@
             type="radio"
             name="formsQ9"
             id="formsQ9b"
-            
           />
           <label class="form-check-label" for="formsQ9b"> Non-compliant </label>
         </div>
 
-        <h3>Form Instructions</h3>
+        <h3 id="formsHeader2">Form Instructions</h3>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP10" class="prompt">
             Instructions for groups or sections MUST be
             programmatically-discernible.
           </div>
@@ -989,7 +998,6 @@
             type="radio"
             name="formsQ10"
             id="formsQ10b"
-            
           />
           <label class="form-check-label" for="formsQ10b">
             Non-compliant
@@ -997,7 +1005,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP11" class="prompt">
             Instructions for groups or sections MUST be meaningful.
           </div>
           <input
@@ -1014,7 +1022,6 @@
             type="radio"
             name="formsQ11"
             id="formsQ11b"
-            
           />
           <label class="form-check-label" for="formsQ11b">
             Non-compliant
@@ -1022,7 +1029,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP12" class="prompt">
             If the instructions for groups or sections are not critical, the
             instructions MAY be hidden until the user requests them.
           </div>
@@ -1040,7 +1047,6 @@
             type="radio"
             name="formsQ12"
             id="formsQ12b"
-            
           />
           <label class="form-check-label" for="formsQ12b">
             Non-compliant
@@ -1048,7 +1054,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP13" class="prompt">
             Instructions for groups or sections MUST NOT rely solely on
             references to sensory characteristics.
           </div>
@@ -1066,7 +1072,6 @@
             type="radio"
             name="formsQ13"
             id="formsQ13b"
-            
           />
           <label class="form-check-label" for="formsQ13b">
             Non-compliant
@@ -1074,7 +1079,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP14" class="prompt">
             Instructions for an element MUST be programmatically-associated with
             the element.
           </div>
@@ -1092,7 +1097,6 @@
             type="radio"
             name="formsQ14"
             id="formsQ14b"
-            
           />
           <label class="form-check-label" for="formsQ14b">
             Non-compliant
@@ -1100,7 +1104,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP15" class="prompt">
             Instructions for an element MUST be available as
             programmatically-discernible text.
           </div>
@@ -1118,7 +1122,6 @@
             type="radio"
             name="formsQ15"
             id="formsQ15b"
-            
           />
           <label class="form-check-label" for="formsQ15b">
             Non-compliant
@@ -1126,7 +1129,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP16" class="prompt">
             Instructions for an element MUST be meaningful.
           </div>
           <input
@@ -1143,7 +1146,6 @@
             type="radio"
             name="formsQ16"
             id="formsQ16b"
-            
           />
           <label class="form-check-label" for="formsQ16b">
             Non-compliant
@@ -1151,7 +1153,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP17" class="prompt">
             If the instructions for an element are not critical, the
             instructions MAY be hidden until the user requests them.
           </div>
@@ -1169,7 +1171,6 @@
             type="radio"
             name="formsQ17"
             id="formsQ17b"
-            
           />
           <label class="form-check-label" for="formsQ17b">
             Non-compliant
@@ -1177,7 +1178,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP18" class="prompt">
             Focusing on an element MUST NOT automatically trigger a change of
             context, unless the user has been adequately advised ahead of time.
           </div>
@@ -1195,7 +1196,6 @@
             type="radio"
             name="formsQ18"
             id="formsQ18b"
-            
           />
           <label class="form-check-label" for="formsQ18b">
             Non-compliant
@@ -1203,7 +1203,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP19" class="prompt">
             Changing an element's value MUST NOT automatically trigger a change
             of context, unless the user is adequately advised ahead of time.
           </div>
@@ -1221,17 +1221,16 @@
             type="radio"
             name="formsQ19"
             id="formsQ19b"
-            
           />
           <label class="form-check-label" for="formsQ19b">
             Non-compliant
           </label>
         </div>
 
-        <h3>Form Feedback</h3>
+        <h3 id="formsHeader3">Form Feedback</h3>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP20" class="prompt">
             Error feedback MUST be programmatically-associated with the
             appropriate element.
           </div>
@@ -1249,7 +1248,6 @@
             type="radio"
             name="formsQ20"
             id="formsQ20b"
-            
           />
           <label class="form-check-label" for="formsQ20b">
             Non-compliant
@@ -1257,7 +1255,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="formsP21" class="prompt">
             Error feedback MUST be programmatically-discernible.
           </div>
           <input
@@ -1274,7 +1272,6 @@
             type="radio"
             name="formsQ21"
             id="formsQ21b"
-            
           />
           <label class="form-check-label" for="formsQ21b">
             Non-compliant
@@ -1282,7 +1279,9 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">Error feedback MUST be meaningful.</div>
+          <div id="formsP22" class="prompt">
+            Error feedback MUST be meaningful.
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -1297,7 +1296,6 @@
             type="radio"
             name="formsQ22"
             id="formsQ22b"
-            
           />
           <label class="form-check-label" for="formsQ22b">
             Non-compliant
@@ -1305,14 +1303,15 @@
         </div>
 
         <div class="input-group">
-          <span class="input-group-text">Forms: Comments</span>
+          <span id="formsP23" class="input-group-text">Forms: Comments</span>
           <textarea
             class="form-control"
             aria-label="Comments on forms"
+            id="formsComments"
           ></textarea>
         </div>
       </section>
-
+      <!--Tables-->
       <section
         class="mydiv hidden row gy-3"
         id="tablez"
@@ -1323,7 +1322,7 @@
         <!-- Tables -->
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="tablesP1" class="prompt">
             Tabular data should be represented in a table
           </div>
           <input
@@ -1340,13 +1339,12 @@
             type="radio"
             name="tableQ1"
             id="tableQ1b"
-            
           />
           <label class="form-check-label" for="tableQ1b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="tablesP2" class="prompt">
             Data tables should have a programmatic name or caption
           </div>
           <input
@@ -1363,13 +1361,12 @@
             type="radio"
             name="tableQ2"
             id="tableQ2b"
-            
           />
           <label class="form-check-label" for="tableQ2b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="tablesP3" class="prompt">
             Name or caption should be accurate, unique, and succinct
           </div>
           <input
@@ -1386,13 +1383,12 @@
             type="radio"
             name="tableQ3"
             id="tableQ3b"
-            
           />
           <label class="form-check-label" for="tableQ3b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="tablesP4" class="prompt">
             Headers should be programmatically determinable and must accurately
             describe corresponding data cells
           </div>
@@ -1410,13 +1406,12 @@
             type="radio"
             name="tableQ4"
             id="tableQ4b"
-            
           />
           <label class="form-check-label" for="tableQ4b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="tablesP5" class="prompt">
             A summary is provided for data tables. If provided, should make the
             table more understandable to screen reader users.
           </div>
@@ -1434,20 +1429,20 @@
             type="radio"
             name="tableQ5"
             id="tableQ5b"
-            
           />
           <label class="form-check-label" for="tableQ5b"> False </label>
         </div>
 
         <div class="input-group">
-          <span class="input-group-text">Tables: Comments</span>
+          <span id="tablesP6" class="input-group-text">Tables: Comments</span>
           <textarea
             class="form-control"
             aria-label="Comments on tables"
+            id="tablesComments"
           ></textarea>
         </div>
       </section>
-
+      <!--Images-->
       <section
         class="mydiv hidden row gy-3"
         id="imagez"
@@ -1458,7 +1453,7 @@
         <!-- Images -->
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="imagesP1" class="prompt">
             Images that convey content MUST have programmatically-discernible
             alternative text
           </div>
@@ -1476,7 +1471,6 @@
             type="radio"
             name="imagesQ1"
             id="imagesQ1b"
-            
           />
           <label class="form-check-label" for="imagesQ1b">
             Non-compliant
@@ -1484,7 +1478,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="imagesP2" class="prompt">
             The alternative text for informative images MUST be meaningful
             (accurately conveying the purpose of the image and the author's
             intent in a way that is useful to those who cannot see the image)
@@ -1503,7 +1497,6 @@
             type="radio"
             name="imagesQ2"
             id="imagesQ2b"
-            
           />
           <label class="form-check-label" for="imagesQ2b">
             Non-compliant
@@ -1511,7 +1504,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="imagesP3" class="prompt">
             Alternative text SHOULD NOT include words that identify the element
             as a graphic or image
           </div>
@@ -1529,7 +1522,6 @@
             type="radio"
             name="imagesQ3"
             id="imagesQ3b"
-            
           />
           <label class="form-check-label" for="imagesQ3b">
             Non-compliant
@@ -1537,7 +1529,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="imagesP4" class="prompt">
             The length of the alternative text for informative images SHOULD be
             concise (no more than about 250 characters)
           </div>
@@ -1555,7 +1547,6 @@
             type="radio"
             name="imagesQ4"
             id="imagesQ4b"
-            
           />
           <label class="form-check-label" for="imagesQ4b">
             Non-compliant
@@ -1563,14 +1554,15 @@
         </div>
 
         <div class="input-group">
-          <span class="input-group-text">Images: Comments</span>
+          <span id="imagesP5" class="input-group-text">Images: Comments</span>
           <textarea
             class="form-control"
             aria-label="Comments on images"
+            id="imagesComments"
           ></textarea>
         </div>
       </section>
-
+      <!-- Regions -->
       <section
         class="mydiv hidden row gy-3"
         id="regionz"
@@ -1581,7 +1573,7 @@
         <!-- Regions -->
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="regionP1" class="prompt">
             Used to designate predetermined parts of the layout
           </div>
           <input
@@ -1598,7 +1590,6 @@
             type="radio"
             name="regionQ1"
             id="regionQ1b"
-            
           />
           <label class="form-check-label" for="regionQ1b">
             Non-compliant
@@ -1606,7 +1597,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="regionP2" class="prompt">
             All text should be contained within a landmark region
           </div>
           <input
@@ -1623,7 +1614,6 @@
             type="radio"
             name="regionQ2"
             id="regionQ2b"
-            
           />
           <label class="form-check-label" for="regionQ2b">
             Non-compliant
@@ -1631,7 +1621,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="regionP3" class="prompt">
             Multiple instances of the same landmark have different names
           </div>
           <input
@@ -1648,7 +1638,6 @@
             type="radio"
             name="regionQ3"
             id="regionQ3b"
-            
           />
           <label class="form-check-label" for="regionQ3b">
             Non-compliant
@@ -1656,7 +1645,7 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="regionP4" class="prompt">
             No duplicates of banner, main, or contentinfo (footer) landmarks
           </div>
           <input
@@ -1673,7 +1662,6 @@
             type="radio"
             name="regionQ4"
             id="regionQ4b"
-            
           />
           <label class="form-check-label" for="regionQ4b">
             Non-compliant
@@ -1681,7 +1669,9 @@
         </div>
 
         <div class="form-check">
-          <div class="prompt">Number of landmarks is minimized</div>
+          <div id="regionP5" class="prompt">
+            Number of landmarks is minimized
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -1696,21 +1686,23 @@
             type="radio"
             name="regionQ5"
             id="regionQ5b"
-            
           />
           <label class="form-check-label" for="regionQ5b">
             Non-compliant
           </label>
         </div>
         <div class="input-group">
-          <span class="input-group-text">Region Landmarks: Comments</span>
+          <span id="regionP6" class="input-group-text"
+            >Region Landmarks: Comments</span
+          >
           <textarea
             class="form-control"
             aria-label="Comments on Region Landmarks"
+            id="regionComments"
           ></textarea>
         </div>
       </section>
-
+      <!-- Media -->
       <section
         class="mydiv hidden row gy-3"
         id="mediaz"
@@ -1721,7 +1713,7 @@
         <!-- Media -->
 
         <div class="form-check">
-          <div class="prompt">
+          <div class="prompt" id="mediaP1">
             Media player functionality is operable with the keyboard and AT
           </div>
           <input
@@ -1738,13 +1730,12 @@
             type="radio"
             name="mediaQ1"
             id="mediaQ1b"
-            
           />
           <label class="form-check-label" for="mediaQ1b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div class="prompt" id="mediaP2">
             Controls must have correct names, roles, values
           </div>
           <input
@@ -1761,13 +1752,12 @@
             type="radio"
             name="mediaQ2"
             id="mediaQ2b"
-            
           />
           <label class="form-check-label" for="mediaQ2b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">
+          <div class="prompt" id="mediaP3">
             Controls must give state (ie selected, pressed, expanded)
           </div>
           <input
@@ -1784,13 +1774,12 @@
             type="radio"
             name="mediaQ3"
             id="mediaQ3b"
-            
           />
           <label class="form-check-label" for="mediaQ3b"> Non-compliant </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">Transcripts are available</div>
+          <div class="prompt" id="mediaP4">Transcripts are available</div>
           <input
             class="form-check-input"
             type="radio"
@@ -1805,13 +1794,14 @@
             type="radio"
             name="mediaQ4"
             id="mediaQ4b"
-            
           />
           <label class="form-check-label" for="mediaQ4b"> False </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">Closed caption controls are available</div>
+          <div class="prompt" id="mediaP5">
+            Closed caption controls are available
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -1824,15 +1814,16 @@
           <input
             class="form-check-input"
             type="radio"
-            name="media52"
+            name="mediaQ5"
             id="mediaQ5b"
-            
           />
           <label class="form-check-label" for="mediaQ5b"> False </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">Audio Description (AD) is available</div>
+          <div class="prompt" id="mediaP6">
+            Audio Description (AD) is available
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -1845,15 +1836,14 @@
           <input
             class="form-check-input"
             type="radio"
-            name="media62"
+            name="mediaQ6"
             id="mediaQ6b"
-            
           />
           <label class="form-check-label" for="mediaQ6b"> False </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">Content does not auto-play</div>
+          <div class="prompt" id="mediaP7">Content does not auto-play</div>
           <input
             class="form-check-input"
             type="radio"
@@ -1868,13 +1858,14 @@
             type="radio"
             name="mediaQ7"
             id="mediaQ7b"
-            
           />
           <label class="form-check-label" for="mediaQ7b"> False </label>
         </div>
 
         <div class="form-check">
-          <div class="prompt">Time based media alternative available</div>
+          <div class="prompt" id="mediaP8">
+            Time based media alternative available
+          </div>
           <input
             class="form-check-input"
             type="radio"
@@ -1889,20 +1880,20 @@
             type="radio"
             name="mediaQ8"
             id="mediaQ8b"
-            
           />
           <label class="form-check-label" for="mediaQ8b"> False </label>
         </div>
 
         <div class="input-group">
-          <span class="input-group-text">Media: Comments</span>
+          <span class="input-group-text" id="mediaP9">Media: Comments</span>
           <textarea
             class="form-control"
             aria-label="Comments on embedded media"
+            id="mediaComments"
           ></textarea>
         </div>
       </section>
-
+      <!-- Status Messages -->
       <section
         class="mydiv hidden row gy-3"
         id="statuz"
@@ -1913,7 +1904,7 @@
         <!-- Status Messages -->
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="statusP1" class="prompt">
             Status messages are programmatically determinable through role or
             properties such that they can be presented to the user by assistive
             technologies without receiving focus.
@@ -1932,7 +1923,6 @@
             type="radio"
             name="statusQ1"
             id="statusQ1b"
-            
           />
           <label class="form-check-label" for="statusQ1b">
             Non-compliant
@@ -1940,14 +1930,17 @@
         </div>
 
         <div class="input-group">
-          <span class="input-group-text">Status Messages: Comments</span>
+          <span id="statusP2" class="input-group-text"
+            >Status Messages: Comments</span
+          >
           <textarea
             class="form-control"
             aria-label="Comments on Status Messages"
+            id="statusComments"
           ></textarea>
         </div>
       </section>
-
+      <!--Aria announcements  -->
       <section
         class="mydiv hidden row gy-3"
         id="ariaz"
@@ -1958,7 +1951,7 @@
         <!--Aria announcements  -->
 
         <div class="form-check">
-          <div class="prompt">
+          <div id="ariaP1" class="prompt">
             Aria live announcements or auto-updating content do not interrupt or
             are overly noisy
           </div>
@@ -1976,22 +1969,22 @@
             type="radio"
             name="ariaQ1"
             id="ariaQ1b"
-            
           />
           <label class="form-check-label" for="ariaQ1b"> Non-compliant </label>
         </div>
 
         <div class="input-group">
-          <span class="input-group-text"
+          <span id="ariaP2" class="input-group-text"
             >Aria Live Announcements: Comments</span
           >
           <textarea
             class="form-control"
             aria-label="Comments on aria live announcements"
+            id="ariaComments"
           ></textarea>
         </div>
       </section>
-
+      <!--Announcement-->
       <span
         aria-live="assertive"
         aria-atomic="true"
@@ -2073,6 +2066,216 @@
         const liveAnnouncementsSwitch =
           document.getElementById("liveAnnouncements");
 
+        //Title elements
+        const titleHeader = document.getElementById("titleHeader").innerHTML;
+        const titleP1 = document.getElementById("titleP1").innerHTML;
+        const title1Q = document.getElementsByName("titleQ1");
+        const titleP2 = document.getElementById("titleP2").innerHTML;
+        const title2Q = document.getElementsByName("titleQ2");
+        const titleP3 = document.getElementById("titleP3").innerHTML;
+        const title3Q = document.getElementsByName("titleQ3");
+        const titleP4 = document.getElementById("titleP4").innerHTML;
+        const titleComments = document.getElementById("titleComments").value;
+
+        //Headers elements
+        const headers = document.getElementById("headingsHeader").innerHTML;
+        const headingsP1 = document.getElementById("headingsP1").innerHTML;
+        const header1Q = document.getElementsByName("headerQ1");
+        const headingsP2 = document.getElementById("headingsP2").innerHTML;
+        const header2Q = document.getElementsByName("headerQ2");
+        const headingsP3 = document.getElementById("headingsP3").innerHTML;
+        const header3Q = document.getElementsByName("headerQ3");
+        const headingsP4 = document.getElementById("headingsP4").innerHTML;
+        const header4Q = document.getElementsByName("headerQ4");
+        const headingsP5 = document.getElementById("headingsP5").innerHTML;
+        const header5Q = document.getElementsByName("headerQ5");
+        const headingsP6 = document.getElementById("headingsP6").innerHTML;
+        const headingComments =
+          document.getElementById("headingComments").value;
+
+        //Links and Buttons elements
+        const linksHeader = document.getElementById("linksHeader").innerHTML;
+        const linkP1 = document.getElementById("linkP1").innerHTML;
+        const linkQ1 = document.getElementsByName("linkQ1");
+        const linkP2 = document.getElementById("linkP2").innerHTML;
+        const linkQ2 = document.getElementsByName("linkQ2");
+        const linkP3 = document.getElementById("linkP3").innerHTML;
+        const linkQ3 = document.getElementsByName("linkQ3");
+        const linkP4 = document.getElementById("linkP4").innerHTML;
+        const linkQ4 = document.getElementsByName("linkQ4");
+        const linkP5 = document.getElementById("linkP5").innerHTML;
+        const linkQ5 = document.getElementsByName("linkQ5");
+        const linkP6 = document.getElementById("linkP6").innerHTML;
+        const linkQ6 = document.getElementsByName("linkQ6");
+        const linkP7 = document.getElementById("linkP7").innerHTML;
+        const linkQ7 = document.getElementsByName("linkQ7");
+        const linkP8 = document.getElementById("linkP8").innerHTML;
+        const linkQ8 = document.getElementsByName("linkQ8");
+        const linkP9 = document.getElementById("linkP9").innerHTML;
+        const linkComments = document.getElementById("linkComments").value;
+
+        //Docs elements
+        const docsHeader = document.getElementById("docsHeader").innerHTML;
+        const docsP1 = document.getElementById("docsP1").innerHTML;
+        const docsQ1 = document.getElementsByName("docsQ1");
+        const docsP2 = document.getElementById("docsP2").innerHTML;
+        const docsQ2 = document.getElementsByName("docsQ2");
+        const docsP3 = document.getElementById("docsP3").innerHTML;
+        const docsQ3 = document.getElementsByName("docsQ3");
+        const docsP4 = document.getElementById("docsP4").innerHTML;
+        const docsComments = document.getElementById("docsComments").value;
+
+        //Forms elements
+        const formsHeader = document.getElementById("formsHeader").innerHTML;
+        const formsHeader1 = document.getElementById("formsHeader1").innerHTML;
+        const formsP1 = document.getElementById("formsP1").innerHTML;
+        const formsQ1 = document.getElementsByName("formsQ1");
+        const formsP2 = document.getElementById("formsP2").innerHTML;
+        const formsQ2 = document.getElementsByName("formsQ2");
+        const formsP3 = document.getElementById("formsP3").innerHTML;
+        const formsQ3 = document.getElementsByName("formsQ3");
+        const formsP4 = document.getElementById("formsP4").innerHTML;
+        const formsQ4 = document.getElementsByName("formsQ4");
+        const formsP5 = document.getElementById("formsP5").innerHTML;
+        const formsQ5 = document.getElementsByName("formsQ5");
+        const formsP6 = document.getElementById("formsP6").innerHTML;
+        const formsQ6 = document.getElementsByName("formsQ6");
+        const formsP7 = document.getElementById("formsP7").innerHTML;
+        const formsQ7 = document.getElementsByName("formsQ7");
+        const formsP8 = document.getElementById("formsP8").innerHTML;
+        const formsQ8 = document.getElementsByName("formsQ8");
+        const formsP9 = document.getElementById("formsP9").innerHTML;
+        const formsQ9 = document.getElementsByName("formsQ9");
+
+        const formsHeader2 = document.getElementById("formsHeader2").innerHTML;
+        const formsP10 = document.getElementById("formsP10").innerHTML;
+        const formsQ10 = document.getElementsByName("formsQ10");
+        const formsP11 = document.getElementById("formsP11").innerHTML;
+        const formsQ11 = document.getElementsByName("formsQ11");
+        const formsP12 = document.getElementById("formsP12").innerHTML;
+        const formsQ12 = document.getElementsByName("formsQ12");
+        const formsP13 = document.getElementById("formsP13").innerHTML;
+        const formsQ13 = document.getElementsByName("formsQ13");
+        const formsP14 = document.getElementById("formsP14").innerHTML;
+        const formsQ14 = document.getElementsByName("formsQ14");
+        const formsP15 = document.getElementById("formsP15").innerHTML;
+        const formsQ15 = document.getElementsByName("formsQ15");
+        const formsP16 = document.getElementById("formsP16").innerHTML;
+        const formsQ16 = document.getElementsByName("formsQ16");
+        const formsP17 = document.getElementById("formsP17").innerHTML;
+        const formsQ17 = document.getElementsByName("formsQ17");
+        const formsP18 = document.getElementById("formsP18").innerHTML;
+        const formsQ18 = document.getElementsByName("formsQ18");
+        const formsP19 = document.getElementById("formsP19").innerHTML;
+        const formsQ19 = document.getElementsByName("formsQ19");
+
+        const formsHeader3 = document.getElementById("formsHeader3").innerHTML;
+        const formsP20 = document.getElementById("formsP20").innerHTML;
+        const formsQ20 = document.getElementsByName("formsQ20");
+        const formsP21 = document.getElementById("formsP21").innerHTML;
+        const formsQ21 = document.getElementsByName("formsQ21");
+        const formsP22 = document.getElementById("formsP22").innerHTML;
+        const formsQ22 = document.getElementsByName("formsQ22");
+        const formsP23 = document.getElementById("formsP23").innerHTML;
+        const formsComments = document.getElementById("formsComments").value;
+
+        //Tables elements
+        const tablesHeader = document.getElementById("tablesHeader").innerHTML;
+        const tablesP1 = document.getElementById("tablesP1").innerHTML;
+        const tableQ1 = document.getElementsByName("tableQ1");
+        const tablesP2 = document.getElementById("tablesP2").innerHTML;
+        const tableQ2 = document.getElementsByName("tableQ2");
+        const tablesP3 = document.getElementById("tablesP3").innerHTML;
+        const tableQ3 = document.getElementsByName("tableQ3");
+        const tablesP4 = document.getElementById("tablesP4").innerHTML;
+        const tableQ4 = document.getElementsByName("tableQ4");
+        const tablesP5 = document.getElementById("tablesP5").innerHTML;
+        const tableQ5 = document.getElementsByName("tableQ5");
+        const tablesP6 = document.getElementById("tablesP6").innerHTML;
+        const tablesComments = document.getElementById("tablesComments").value;
+
+        //Images elements
+        const imagesHeader = document.getElementById("imagesHeader").innerHTML;
+        const imagesP1 = document.getElementById("tablesP1").innerHTML;
+        const imagesQ1 = document.getElementsByName("tableQ1");
+        const imagesP2 = document.getElementById("tablesP2").innerHTML;
+        const imagesQ2 = document.getElementsByName("tableQ2");
+        const imagesP3 = document.getElementById("tablesP3").innerHTML;
+        const imagesQ3 = document.getElementsByName("tableQ3");
+        const imagesP4 = document.getElementById("tablesP4").innerHTML;
+        const imagesQ4 = document.getElementsByName("tableQ4");
+        const imagesP5 = document.getElementById("tablesP5").innerHTML;
+        const imagesComments = document.getElementById("tablesComments").value;
+
+        //Regions elements
+        const regionHeader = document.getElementById("regionHeader").innerHTML;
+        const regionP1 = document.getElementById("regionP1").innerHTML;
+        const regionQ1 = document.getElementsByName("regionQ1");
+        const regionP2 = document.getElementById("regionP2").innerHTML;
+        const regionQ2 = document.getElementsByName("regionQ2");
+        const regionP3 = document.getElementById("regionP3").innerHTML;
+        const regionQ3 = document.getElementsByName("regionQ3");
+        const regionP4 = document.getElementById("regionP4").innerHTML;
+        const regionQ4 = document.getElementsByName("regionQ4");
+        const regionP5 = document.getElementById("regionP5").innerHTML;
+        const regionQ5 = document.getElementsByName("regionQ5");
+        const regionP6 = document.getElementById("regionP6").innerHTML;
+        const regionComments = document.getElementById("regionComments").value;
+
+        //Media elements
+        const mediaHeader = document.getElementById("mediaHeader").innerHTML;
+        const mediaP1 = document.getElementById("mediaP1").innerHTML;
+        const mediaQ1 = document.getElementsByName("mediaQ1");
+        const mediaP2 = document.getElementById("mediaP2").innerHTML;
+        const mediaQ2 = document.getElementsByName("mediaQ2");
+        const mediaP3 = document.getElementById("mediaP3").innerHTML;
+        const mediaQ3 = document.getElementsByName("mediaQ3");
+        const mediaP4 = document.getElementById("mediaP4").innerHTML;
+        const mediaQ4 = document.getElementsByName("mediaQ4");
+        const mediaP5 = document.getElementById("mediaP5").innerHTML;
+        const mediaQ5 = document.getElementsByName("mediaQ5");
+        const mediaP6 = document.getElementById("mediaP6").innerHTML;
+        const mediaQ6 = document.getElementsByName("mediaQ6");
+        const mediaP7 = document.getElementById("mediaP7").innerHTML;
+        const mediaQ7 = document.getElementsByName("mediaQ7");
+        const mediaP8 = document.getElementById("mediaP8").innerHTML;
+        const mediaQ8 = document.getElementsByName("mediaQ8");
+        const mediaP9 = document.getElementById("mediaP9").innerHTML;
+        const mediaComments = document.getElementById("mediaComments").value;
+
+        //Status elements
+        const statusHeader = document.getElementById("statusHeader").innerHTML;
+        const statusP1 = document.getElementById("statusP1").innerHTML;
+        const statusQ1 = document.getElementsByName("statusQ1");
+        const statusP2 = document.getElementById("statusP2").innerHTML;
+        const statusComments = document.getElementById("statusComments").value;
+
+        //Aria elements
+        const ariaHeader = document.getElementById("ariaHeader").innerHTML;
+        const ariaP1 = document.getElementById("ariaP1").innerHTML;
+        const ariaQ1 = document.getElementsByName("ariaQ1");
+        const ariaP2 = document.getElementById("ariaP2").innerHTML;
+        const ariaComments = document.getElementById("ariaComments").value;
+
+        const selectedButton = (i) => {
+          console.log(i);
+
+          let optA = i[0].checked;
+          let optB = i[1].checked;
+
+          console.log(optA, optB);
+
+          if (optA) {
+            return i[0].labels[0].innerText;
+          } else {
+            if (optB) {
+              return i[1].labels[0].innerText;
+            } else {
+              return "Not audited!";
+            }
+          }
+        };
+
         // This variable stores all the data.
         let data =
           "Screen Reader Audit Results" +
@@ -2131,11 +2334,357 @@
           "ARIA Announcements: " +
           liveAnnouncementsSwitch.checked +
           " \r\n " +
-          " \r\n ";
+          " \r\n " +
+          titleHeader +
+          " \r\n " +
+          titleP1 +
+          " - " +
+          selectedButton(title1Q) +
+          " \r\n " +
+          titleP2 +
+          " - " +
+          selectedButton(title2Q) +
+          " \r\n " +
+          titleP3 +
+          " - " +
+          selectedButton(title3Q) +
+          " \r\n " +
+          titleP4 +
+          " \r\n " +
+          titleComments +
+          " \r\n " +
+          " \r\n " +
+          headers +
+          " \r\n " +
+          headingsP1 +
+          " - " +
+          selectedButton(header1Q) +
+          " \r\n " +
+          headingsP2 +
+          " - " +
+          selectedButton(header2Q) +
+          " \r\n " +
+          headingsP3 +
+          " - " +
+          selectedButton(header3Q) +
+          " \r\n " +
+          headingsP4 +
+          " - " +
+          selectedButton(header4Q) +
+          " \r\n " +
+          headingsP5 +
+          " - " +
+          selectedButton(header5Q) +
+          " \r\n " +
+          headingsP6 +
+          " \r\n " +
+          headingComments +
+          " \r\n " +
+          " \r\n " +
+          linksHeader +
+          " \r\n " +
+          linkP1 +
+          " - " +
+          selectedButton(linkQ1) +
+          " \r\n " +
+          linkP2 +
+          " - " +
+          selectedButton(linkQ2) +
+          " \r\n " +
+          linkP3 +
+          " - " +
+          selectedButton(linkQ3) +
+          " \r\n " +
+          linkP4 +
+          " - " +
+          selectedButton(linkQ4) +
+          " \r\n " +
+          linkP5 +
+          " - " +
+          selectedButton(linkQ5) +
+          " \r\n " +
+          linkP6 +
+          " - " +
+          selectedButton(linkQ6) +
+          " \r\n " +
+          linkP7 +
+          " - " +
+          selectedButton(linkQ7) +
+          " \r\n " +
+          linkP8 +
+          " - " +
+          selectedButton(linkQ8) +
+          " \r\n " +
+          linkP9 +
+          " \r\n " +
+          linkComments +
+          " \r\n " +
+          " \r\n " +
+          docsHeader +
+          " \r\n " +
+          docsP1 +
+          " - " +
+          selectedButton(docsQ1) +
+          " \r\n " +
+          docsP2 +
+          " - " +
+          selectedButton(docsQ2) +
+          " \r\n " +
+          docsP3 +
+          " - " +
+          selectedButton(docsQ3) +
+          " \r\n " +
+          docsP4 +
+          " \r\n " +
+          docsComments +
+          " \r\n " +
+          " \r\n " +
+          formsHeader +
+          " \r\n " +
+          " \r\n " +
+          formsHeader1 +
+          " \r\n " +
+          formsP1 +
+          " - " +
+          selectedButton(formsQ1) +
+          " \r\n " +
+          formsP2 +
+          " - " +
+          selectedButton(formsQ2) +
+          " \r\n " +
+          formsP3 +
+          " - " +
+          selectedButton(formsQ3) +
+          " \r\n " +
+          formsP4 +
+          " - " +
+          selectedButton(formsQ4) +
+          " \r\n " +
+          formsP5 +
+          " - " +
+          selectedButton(formsQ5) +
+          " \r\n " +
+          formsP6 +
+          " - " +
+          selectedButton(formsQ6) +
+          " \r\n " +
+          formsP7 +
+          " - " +
+          selectedButton(formsQ7) +
+          " \r\n " +
+          formsP8 +
+          " - " +
+          selectedButton(formsQ8) +
+          " \r\n " +
+          formsP9 +
+          " - " +
+          selectedButton(formsQ9) +
+          " \r\n " +
+          " \r\n " +
+          " \r\n " +
+          formsHeader2 +
+          " \r\n " +
+          formsP10 +
+          " - " +
+          selectedButton(formsQ10) +
+          " \r\n " +
+          formsP11 +
+          " - " +
+          selectedButton(formsQ11) +
+          " \r\n " +
+          formsP12 +
+          " - " +
+          selectedButton(formsQ12) +
+          " \r\n " +
+          formsP13 +
+          " - " +
+          selectedButton(formsQ13) +
+          " \r\n " +
+          formsP14 +
+          " - " +
+          selectedButton(formsQ14) +
+          " \r\n " +
+          formsP15 +
+          " - " +
+          selectedButton(formsQ15) +
+          " \r\n " +
+          formsP16 +
+          " - " +
+          selectedButton(formsQ16) +
+          " \r\n " +
+          formsP17 +
+          " - " +
+          selectedButton(formsQ17) +
+          " \r\n " +
+          formsP18 +
+          " - " +
+          selectedButton(formsQ18) +
+          " \r\n " +
+          formsP19 +
+          " - " +
+          selectedButton(formsQ19) +
+          " \r\n " +
+          " \r\n " +
+          " \r\n " +
+          formsHeader3 +
+          " \r\n " +
+          formsP20 +
+          " - " +
+          selectedButton(formsQ20) +
+          " \r\n " +
+          formsP21 +
+          " - " +
+          selectedButton(formsQ21) +
+          " \r\n " +
+          formsP22 +
+          " - " +
+          selectedButton(formsQ22) +
+          " \r\n " +
+          formsP23 +
+          " \r\n " +
+          formsComments +
+          " \r\n " +
+          " \r\n " +
+          tablesHeader +
+          " \r\n " +
+          tablesP1 +
+          " - " +
+          selectedButton(tableQ1) +
+          " \r\n " +
+          tablesP2 +
+          " - " +
+          selectedButton(tableQ2) +
+          " \r\n " +
+          tablesP3 +
+          " - " +
+          selectedButton(tableQ3) +
+          " \r\n " +
+          tablesP4 +
+          " - " +
+          selectedButton(tableQ4) +
+          " \r\n " +
+          tablesP5 +
+          " - " +
+          selectedButton(tableQ5) +
+          " \r\n " +
+          tablesP6 +
+          " \r\n " +
+          tablesComments +
+          " \r\n " +
+          " \r\n " +
+          imagesHeader +
+          " \r\n " +
+          imagesP1 +
+          " - " +
+          selectedButton(imagesQ1) +
+          " \r\n " +
+          imagesP2 +
+          " - " +
+          selectedButton(imagesQ2) +
+          " \r\n " +
+          imagesP3 +
+          " - " +
+          selectedButton(imagesQ3) +
+          " \r\n " +
+          imagesP4 +
+          " - " +
+          selectedButton(imagesQ4) +
+          " \r\n " +
+          imagesP5 +
+          " \r\n " +
+          imagesComments +
+          " \r\n " +
+          " \r\n " +
+          regionHeader +
+          " \r\n " +
+          regionP1 +
+          " - " +
+          selectedButton(regionQ1) +
+          " \r\n " +
+          regionP2 +
+          " - " +
+          selectedButton(regionQ2) +
+          " \r\n " +
+          regionP3 +
+          " - " +
+          selectedButton(regionQ3) +
+          " \r\n " +
+          regionP4 +
+          " - " +
+          selectedButton(regionQ4) +
+          " \r\n " +
+          regionP5 +
+          " - " +
+          selectedButton(regionQ5) +
+          " \r\n " +
+          regionP6 +
+          " \r\n " +
+          regionComments +
+          " \r\n " +
+          " \r\n " +
+          mediaHeader +
+          " \r\n " +
+          mediaP1 +
+          " - " +
+          selectedButton(mediaQ1) +
+          " \r\n " +
+          mediaP2 +
+          " - " +
+          selectedButton(mediaQ2) +
+          " \r\n " +
+          mediaP3 +
+          " - " +
+          selectedButton(mediaQ3) +
+          " \r\n " +
+          mediaP4 +
+          " - " +
+          selectedButton(mediaQ4) +
+          " \r\n " +
+          mediaP5 +
+          " - " +
+          selectedButton(mediaQ5) +
+          " \r\n " +
+          mediaP6 +
+          " - " +
+          selectedButton(mediaQ6) +
+          " \r\n " +
+          mediaP7 +
+          " - " +
+          selectedButton(mediaQ7) +
+          " \r\n " +
+          mediaP8 +
+          " - " +
+          selectedButton(mediaQ8) +
+          " \r\n " +
+          mediaP9 +
+          " \r\n " +
+          mediaComments +
+          " \r\n " +
+          " \r\n " +
+          statusHeader +
+          " \r\n " +
+          statusP1 +
+          " - " +
+          selectedButton(statusQ1) +
+          " \r\n " +
+          statusP2 +
+          " \r\n " +
+          statusComments +
+          " \r\n " +
+          " \r\n " +
+          ariaHeader +
+          " \r\n " +
+          ariaP1 +
+          " - " +
+          selectedButton(ariaQ1) +
+          " \r\n " +
+          ariaP2 +
+          " \r\n " +
+          ariaComments;
 
         // Convert the text to BLOB.
         const textToBLOB = new Blob([data], { type: "text/plain" });
-        const sFileName = "formData.txt"; // The file to save the data.
+        const sFileName = "auditResults.txt"; // The file to save the data.
 
         let newLink = document.createElement("a");
         newLink.download = sFileName;
