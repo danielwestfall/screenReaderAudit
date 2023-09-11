@@ -2684,7 +2684,7 @@
 
         // Convert the text to BLOB.
         const textToBLOB = new Blob([data], { type: "text/plain" });
-        const sFileName = "auditResults.txt"; // The file to save the data.
+        const sFileName = pageId.value + " " + new Date().toDateString() + ".txt"; // The file to save the data.
 
         let newLink = document.createElement("a");
         newLink.download = sFileName;
