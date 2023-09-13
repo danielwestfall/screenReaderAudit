@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -95,8 +95,6 @@
           </select>
         </div>
 
-        <!-- -->
-
         <div class="mb-3">
           Use the comments box to list any additional tools used, comments about
           audit such as recent updates, or any other relevant information.
@@ -121,1878 +119,2003 @@
           data loss. Click the Save button below to download a text document of
           your report.
         </div>
-
-        <!-- Switches -->
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="pageTitle"
-            onclick="showHide('title')"
-          />
-          <label class="form-check-label" for="pageTitle"> Page Title </label>
-        </div>
-
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="headings"
-            onclick="showHide('headers')"
-          />
-          <label class="form-check-label" for="headings"> Headings </label>
-        </div>
-
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="links"
-            onclick="showHide('linkButton')"
-          />
-          <label class="form-check-label" for="links">
-            Links and Buttons
-          </label>
-        </div>
-
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="docs"
-            onclick="showHide('downloads')"
-          />
-          <label class="form-check-label" for="docs"> Documents </label>
-        </div>
-
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="forms"
-            onclick="showHide('formz')"
-          />
-          <label class="form-check-label" for="forms"> Forms </label>
-        </div>
-
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="tables"
-            onclick="showHide('tablez')"
-          />
-          <label class="form-check-label" for="tables"> Tables </label>
-        </div>
-
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="images"
-            onclick="showHide('imagez')"
-          />
-          <label class="form-check-label" for="images"> Images </label>
-        </div>
-
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="regionLandmark"
-            onclick="showHide('regionz')"
-          />
-          <label class="form-check-label" for="regionLandmark">
-            Region Landmark
-          </label>
-        </div>
-
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="media"
-            onclick="showHide('mediaz')"
-          />
-          <label class="form-check-label" for="media"> Media </label>
-        </div>
-
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="statusMessages"
-            onclick="showHide('statuz')"
-          />
-          <label class="form-check-label" for="statusMessages">
-            Status Messages
-          </label>
-        </div>
-
-        <div class="form-check form-check-inline form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="liveAnnouncements"
-            onclick="showHide('ariaz')"
-          />
-          <label class="form-check-label" for="liveAnnouncements">
-            ARIA Announcements
-          </label>
-        </div>
       </form>
     </header>
 
-    <main>
-      <!--Page Title-->
-      <section
-        class="mydiv hidden row gy-3"
-        id="title"
-        aria-labelledby="pageTitleHeader"
-      >
-        <h2 id="titleHeader" id="pageTitleHeader">Page Title</h2>
-
-        <!-- Page Title -->
-
-        <div class="form-check">
-          <div id="titleP1" class="prompt">
-            Page title is present and contains text
-          </div>
-
-          <input
-            class="form-check-input"
-            type="radio"
-            name="titleQ1"
-            id="titleQ1a"
-          />
-          <label class="form-check-label" for="titleQ1a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="titleQ1"
-            id="titleQ1b"
-          />
-          <label class="form-check-label" for="titleQ1b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="titleP2" class="prompt">
-            Page Title changes when URL changes
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="titleQ2"
-            id="titleQ2a"
-          />
-          <label class="form-check-label" for="titleQ2a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="titleQ2"
-            id="titleQ2b"
-          />
-          <label class="form-check-label" for="titleQ2b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="titleP3" class="prompt">
-            Page Title Matches or corresponds to the H1 and page content
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="titleQ3"
-            id="titleQ3a"
-          />
-          <label class="form-check-label" for="titleQ3a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="titleQ3"
-            id="titleQ3b"
-          />
-          <label class="form-check-label" for="titleQ3b"> Non-compliant </label>
-        </div>
-        <div class="input-group">
-          <span id="titleP4" class="input-group-text"
-            >Page Title: Comments</span
+    <div class="accordion" id="accordionExample">
+      <!-- Page Title -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
           >
-          <textarea
-            class="form-control"
-            aria-label="Comments on page title"
-            id="titleComments"
-          ></textarea>
-        </div>
-      </section>
-      <!--Headings-->
-      <section
-        class="mydiv hidden row gy-3"
-        id="headers"
-        aria-labelledby="headingsHeader"
-      >
-        <h2 id="headingsHeader">Headings</h2>
+            Page Title
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="titleHeader" id="pageTitleHeader">Page Title</h2>
 
-        <!-- Headings -->
+            <!-- Page Title -->
 
-        <div class="form-check">
-          <div id="headingsP1" class="prompt">
-            Headings are accurate, informative, and concise
+            <div class="form-check">
+              <h3 id="titleP1" class="prompt">
+                Page title is present and contains text
+              </h3>
+
+              <input
+                class="form-check-input"
+                type="radio"
+                name="titleQ1"
+                id="titleQ1a"
+              />
+              <label class="form-check-label" for="titleQ1a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="titleQ1"
+                id="titleQ1b"
+              />
+              <label class="form-check-label" for="titleQ1b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="titleP2" class="prompt">
+                Page Title changes when URL changes
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="titleQ2"
+                id="titleQ2a"
+              />
+              <label class="form-check-label" for="titleQ2a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="titleQ2"
+                id="titleQ2b"
+              />
+              <label class="form-check-label" for="titleQ2b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="titleP3" class="prompt">
+                Page Title Matches or corresponds to the H1 and page content
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="titleQ3"
+                id="titleQ3a"
+              />
+              <label class="form-check-label" for="titleQ3a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="titleQ3"
+                id="titleQ3b"
+              />
+              <label class="form-check-label" for="titleQ3b">
+                Non-compliant
+              </label>
+            </div>
+            <div class="input-group">
+              <h3 id="titleP4" class="input-group-text"></h3>
+                Page Title: Comments
+              </h3>
+              <textarea
+                class="form-control"
+                aria-label="Comments on page title"
+                id="titleComments"
+              ></textarea>
+            </div>
           </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="headerQ1"
-            id="headerQ1a"
-          />
-          <label class="form-check-label" for="headerQ1a"> Compliant </label>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="headerQ1"
-            id="headerQ1b"
-          />
-          <label class="form-check-label" for="headerQ1b">
-            Non-compliant
-          </label>
-        </div>
+      </div>
 
-        <div class="form-check">
-          <div id="headingsP2" class="prompt">
-            Headings convey the content's structure
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="headerQ2"
-            id="headerQ2a"
-          />
-          <label class="form-check-label" for="headerQ2a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="headerQ2"
-            id="headerQ2b"
-          />
-          <label class="form-check-label" for="headerQ2b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="headingsP3" class="prompt">
-            Headings don't skip levels and have proper nesting
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="headerQ3"
-            id="headerQ3a"
-          />
-          <label class="form-check-label" for="headerQ3a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="headerQ3"
-            id="headerQ3b"
-          />
-          <label class="form-check-label" for="headerQ3b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="headingsP4" class="prompt">Headings start with a H1</div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="headerQ4"
-            id="headerQ4a"
-          />
-          <label class="form-check-label" for="headerQ4a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="headerQ4"
-            id="headerQ4b"
-          />
-          <label class="form-check-label" for="headerQ4b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="headingsP5" class="prompt">There is only 1 H1</div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="headerQ5"
-            id="headerQ5a"
-          />
-          <label class="form-check-label" for="headerQ5a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="headerQ5"
-            id="headerQ5b"
-          />
-          <label class="form-check-label" for="headerQ5b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="input-group">
-          <span id="headingsP6" class="input-group-text"
-            >Page Headings: Comments</span
+      <!-- Page Headings -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
           >
-          <textarea
-            class="form-control"
-            aria-label="Comments on page headings"
-            id="headingComments"
-          ></textarea>
-        </div>
-      </section>
-      <!--Links and Buttons-->
-      <section
-        class="mydiv hidden row gy-3"
-        id="linkButton"
-        aria-labelledby="linksHeader"
-      >
-        <h2 id="linksHeader">Links and Buttons</h2>
+            Headings
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="headingsHeader">Headings</h2>
 
-        <!-- Links-->
-        <div class="form-check">
-          <div id="linkP1" class="prompt">
-            Links are semantically designated as such
+            <!-- Headings -->
+
+            <div class="form-check">
+              <h3 id="headingsP1" class="prompt">
+                Headings are accurate, informative, and concise
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="headerQ1"
+                id="headerQ1a"
+              />
+              <label class="form-check-label" for="headerQ1a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="headerQ1"
+                id="headerQ1b"
+              />
+              <label class="form-check-label" for="headerQ1b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="headingsP2" class="prompt">
+                Headings convey the content's structure
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="headerQ2"
+                id="headerQ2a"
+              />
+              <label class="form-check-label" for="headerQ2a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="headerQ2"
+                id="headerQ2b"
+              />
+              <label class="form-check-label" for="headerQ2b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="headingsP3" class="prompt">
+                Headings don't skip levels and have proper nesting
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="headerQ3"
+                id="headerQ3a"
+              />
+              <label class="form-check-label" for="headerQ3a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="headerQ3"
+                id="headerQ3b"
+              />
+              <label class="form-check-label" for="headerQ3b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="headingsP4" class="prompt">
+                Headings start with a H1
+            </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="headerQ4"
+                id="headerQ4a"
+              />
+              <label class="form-check-label" for="headerQ4a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="headerQ4"
+                id="headerQ4b"
+              />
+              <label class="form-check-label" for="headerQ4b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="headingsP5" class="prompt">
+                There is only 1 H1
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="headerQ5"
+                id="headerQ5a"
+              />
+              <label class="form-check-label" for="headerQ5a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="headerQ5"
+                id="headerQ5b"
+              />
+              <label class="form-check-label" for="headerQ5b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="input-group">
+              <h3 id="headingsP6" class="input-group-text">
+                Page Headings: Comments
+              </h3>
+              <textarea
+                class="form-control"
+                aria-label="Comments on page headings"
+                id="headingComments"
+              ></textarea>
+            </div>
           </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ1"
-            id="linkQ1a"
-          />
-          <label class="form-check-label" for="linkQ1a"> Compliant </label>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ1"
-            id="linkQ1b"
-          />
-          <label class="form-check-label" for="linkQ1b"> Non-compliant </label>
-        </div>
+      </div>
 
-        <div class="form-check">
-          <div id="linkP2" class="prompt">
-            Links and buttons should be designated by their functions
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ2"
-            id="linkQ2a"
-          />
-          <label class="form-check-label" for="linkQ2a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ2"
-            id="linkQ2b"
-          />
-          <label class="form-check-label" for="linkQ2b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="linkP3" class="prompt">
-            Links must have programmatically discernible text
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ3"
-            id="linkQ3a"
-          />
-          <label class="form-check-label" for="linkQ3a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ3"
-            id="linkQ3b"
-          />
-          <label class="form-check-label" for="linkQ3b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="linkP4" class="prompt">
-            Link purpose should be determinable by link text alone
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ4"
-            id="linkQ4a"
-          />
-          <label class="form-check-label" for="linkQ4a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ4"
-            id="linkQ4b"
-          />
-          <label class="form-check-label" for="linkQ4b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="linkP5" class="prompt">
-            Link text should not state “link”
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ5"
-            id="linkQ5a"
-          />
-          <label class="form-check-label" for="linkQ5a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ5"
-            id="linkQ5b"
-          />
-          <label class="form-check-label" for="linkQ5b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="linkP6" class="prompt">
-            Features such as labels, names, and text alternatives should be
-            consistent throughout the site
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ6"
-            id="linkQ6a"
-          />
-          <label class="form-check-label" for="linkQ6a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ6"
-            id="linkQ6b"
-          />
-          <label class="form-check-label" for="linkQ6b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="linkP7" class="prompt">
-            Links must be visually distinguishable from plain text
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ7"
-            id="linkQ7a"
-          />
-          <label class="form-check-label" for="linkQ7a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ7"
-            id="linkQ7b"
-          />
-          <label class="form-check-label" for="linkQ7b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="linkP8" class="prompt">
-            Must have a visual focus indicator when in focus
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ8"
-            id="linkQ8a"
-          />
-          <label class="form-check-label" for="linkQ8a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="linkQ8"
-            id="linkQ8b"
-          />
-          <label class="form-check-label" for="linkQ8b"> Non-compliant </label>
-        </div>
-
-        <div class="input-group">
-          <span id="linkP9" class="input-group-text"
-            >Links and Buttons: Comments</span
+      <!-- Links and Buttons -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
           >
-          <textarea
-            class="form-control"
-            aria-label="Comments on links and buttons"
-            id="linkComments"
-          ></textarea>
-        </div>
-      </section>
-      <!--Docs-->
-      <section
-        class="mydiv hidden row gy-3"
-        id="downloads"
-        aria-labelledby="docsHeader"
-      >
-        <h2 id="docsHeader">Downloadable Docs</h2>
+            Links and Buttons
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="linksHeader">Links and Buttons</h2>
 
-        <!-- Downloadable docs -->
+            <!-- Links-->
+            <div class="form-check">
+              <h3 id="linkP1" class="prompt">
+                Links are semantically designated as such
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ1"
+                id="linkQ1a"
+              />
+              <label class="form-check-label" for="linkQ1a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ1"
+                id="linkQ1b"
+              />
+              <label class="form-check-label" for="linkQ1b">
+                Non-compliant
+              </label>
+            </div>
 
-        <div class="form-check">
-          <div id="docsP1" class="prompt">
-            An HTML version of non-HTML content SHOULD be made available to
-            users.
+            <div class="form-check">
+              <h3 id="linkP2" class="prompt">
+                Links and buttons should be designated by their functions
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ2"
+                id="linkQ2a"
+              />
+              <label class="form-check-label" for="linkQ2a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ2"
+                id="linkQ2b"
+              />
+              <label class="form-check-label" for="linkQ2b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="linkP3" class="prompt">
+                Links must have programmatically discernible text
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ3"
+                id="linkQ3a"
+              />
+              <label class="form-check-label" for="linkQ3a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ3"
+                id="linkQ3b"
+              />
+              <label class="form-check-label" for="linkQ3b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="linkP4" class="prompt">
+                Link purpose should be determinable by link text alone
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ4"
+                id="linkQ4a"
+              />
+              <label class="form-check-label" for="linkQ4a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ4"
+                id="linkQ4b"
+              />
+              <label class="form-check-label" for="linkQ4b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="linkP5" class="prompt">
+                Link text should not state “link”
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ5"
+                id="linkQ5a"
+              />
+              <label class="form-check-label" for="linkQ5a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ5"
+                id="linkQ5b"
+              />
+              <label class="form-check-label" for="linkQ5b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="linkP6" class="prompt">
+                Features such as labels, names, and text alternatives should be
+                consistent throughout the site
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ6"
+                id="linkQ6a"
+              />
+              <label class="form-check-label" for="linkQ6a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="linkQ6"
+                id="linkQ6b"
+              />
+              <label class="form-check-label" for="linkQ6b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="input-group">
+              <h3 id="linkP9" class="input-group-text">
+                Links and Buttons: Comments
+              </h3>
+              <textarea
+                class="form-control"
+                aria-label="Comments on links and buttons"
+                id="linkComments"
+              ></textarea>
+            </div>
           </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="docsQ1"
-            id="docsQ1a"
-          />
-          <label class="form-check-label" for="docsQ1a"> Compliant </label>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="docsQ1"
-            id="docsQ1b"
-          />
-          <label class="form-check-label" for="docsQ1b"> Non-compliant </label>
-        </div>
+      </div>
 
-        <div class="form-check">
-          <div id="docsP2" class="prompt">
-            Non-HTML documents MUST adhere to basic accessibility principles.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="docsQ2"
-            id="docsQ2a"
-          />
-          <label class="form-check-label" for="docsQ2a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="docsQ2"
-            id="docsQ2b"
-          />
-          <label class="form-check-label" for="docsQ2b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="docsP3" class="prompt">
-            PDFs files are in tagged PDF format.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="docsQ3"
-            id="docsQ3a"
-          />
-          <label class="form-check-label" for="docsQ3a"> True </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="docsQ3"
-            id="docsQ3b"
-          />
-          <label class="form-check-label" for="docsQ3b"> False </label>
-        </div>
-
-        <div class="input-group">
-          <span id="docsP4" class="input-group-text"
-            >Downloadable Documents: Comments</span
+      <!-- Downloads -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour"
           >
-          <textarea
-            class="form-control"
-            aria-label="Comments on downloadable documents"
-            id="docsComments"
-          ></textarea>
-        </div>
-      </section>
-      <!--Forms-->
-      <section
-        class="mydiv hidden row gy-3"
-        id="formz"
-        aria-labelledby="formsHeader"
-      >
-        <h2 id="formsHeader">Forms</h2>
+            Downloads
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="docsHeader">Downloadable Docs</h2>
 
-        <!-- Forms -->
+            <!-- Downloadable docs -->
 
-        <h3 id="formsHeader1">Form Labels</h3>
+            <div class="form-check">
+              <h3 id="docsP1" class="prompt">
+                An HTML version of non-HTML content SHOULD be made available to
+                users.
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="docsQ1"
+                id="docsQ1a"
+              />
+              <label class="form-check-label" for="docsQ1a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="docsQ1"
+                id="docsQ1b"
+              />
+              <label class="form-check-label" for="docsQ1b">
+                Non-compliant
+              </label>
+            </div>
 
-        <div class="form-check">
-          <div id="formsP1" class="prompt">
-            Labels are programmatically-discernible.
+            <div class="form-check">
+              <h3 id="docsP2" class="prompt">
+                Non-HTML documents MUST adhere to basic accessibility
+                principles.
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="docsQ2"
+                id="docsQ2a"
+              />
+              <label class="form-check-label" for="docsQ2a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="docsQ2"
+                id="docsQ2b"
+              />
+              <label class="form-check-label" for="docsQ2b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="docsP3" class="prompt">
+                PDFs files are in tagged PDF format.
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="docsQ3"
+                id="docsQ3a"
+              />
+              <label class="form-check-label" for="docsQ3a"> True </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="docsQ3"
+                id="docsQ3b"
+              />
+              <label class="form-check-label" for="docsQ3b"> False </label>
+            </div>
+
+            <div class="input-group">
+              <h3 id="docsP4" class="input-group-text">
+                Downloadable Documents: Comments
+              </h3>
+              <textarea
+                class="form-control"
+                aria-label="Comments on downloadable documents"
+                id="docsComments"
+              ></textarea>
+            </div>
           </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ1"
-            id="formsQ1a"
-          />
-          <label class="form-check-label" for="formsQ1a"> Compliant </label>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ1"
-            id="formsQ1b"
-          />
-          <label class="form-check-label" for="formsQ1b"> Non-compliant </label>
-        </div>
+      </div>
 
-        <div class="form-check">
-          <div id="formsP2" class="prompt">Labels are be meaningful.</div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ2"
-            id="formsQ2a"
-          />
-          <label class="form-check-label" for="formsQ2a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ2"
-            id="formsQ2b"
-          />
-          <label class="form-check-label" for="formsQ2b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP3" class="prompt">
-            Placeholder text is not the only method of providing a label for a
-            text input.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ3"
-            id="formsQ3a"
-          />
-          <label class="form-check-label" for="formsQ3a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ3"
-            id="formsQ3b"
-          />
-          <label class="form-check-label" for="formsQ3b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP4" class="prompt">
-            Labels are adjacent in the DOM to its corresponding element.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ4"
-            id="formsQ4a"
-          />
-          <label class="form-check-label" for="formsQ4a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ4"
-            id="formsQ4b"
-          />
-          <label class="form-check-label" for="formsQ4b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP5" class="prompt">
-            When multiple labels are used for one element, each label MUST be
-            programmatically associated with the corresponding element.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ5"
-            id="formsQ5a"
-          />
-          <label class="form-check-label" for="formsQ5a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ5"
-            id="formsQ5b"
-          />
-          <label class="form-check-label" for="formsQ5b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP6" class="prompt">
-            When one label is used for multiple elements, the label MUST be
-            programmatically associated with each of the corresponding elements.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ6"
-            id="formsQ6a"
-          />
-          <label class="form-check-label" for="formsQ6a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ6"
-            id="formsQ6b"
-          />
-          <label class="form-check-label" for="formsQ6b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP7" class="prompt">
-            Group labels MUST be programmatically-associated with the group if
-            the individual labels for each element in the group are insufficient
-            on their own.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ7"
-            id="formsQ7a"
-          />
-          <label class="form-check-label" for="formsQ7a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ7"
-            id="formsQ7b"
-          />
-          <label class="form-check-label" for="formsQ7b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP8" class="prompt">
-            Group labels MUST be programmatically-discernible.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ8"
-            id="formsQ8a"
-          />
-          <label class="form-check-label" for="formsQ8a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ8"
-            id="formsQ8b"
-          />
-          <label class="form-check-label" for="formsQ8b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP9" class="prompt">
-            Group labels MUST be meaningful.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ9"
-            id="formsQ9a"
-          />
-          <label class="form-check-label" for="formsQ9a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ9"
-            id="formsQ9b"
-          />
-          <label class="form-check-label" for="formsQ9b"> Non-compliant </label>
-        </div>
-
-        <h3 id="formsHeader2">Form Instructions</h3>
-
-        <div class="form-check">
-          <div id="formsP10" class="prompt">
-            Instructions for groups or sections MUST be
-            programmatically-discernible.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ10"
-            id="formsQ10a"
-          />
-          <label class="form-check-label" for="formsQ1a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ10"
-            id="formsQ10b"
-          />
-          <label class="form-check-label" for="formsQ10b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP11" class="prompt">
-            Instructions for groups or sections MUST be meaningful.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ11"
-            id="formsQ11a"
-          />
-          <label class="form-check-label" for="formsQ11a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ11"
-            id="formsQ11b"
-          />
-          <label class="form-check-label" for="formsQ11b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP12" class="prompt">
-            If the instructions for groups or sections are not critical, the
-            instructions MAY be hidden until the user requests them.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ12"
-            id="formsQ12a"
-          />
-          <label class="form-check-label" for="formsQ12a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ12"
-            id="formsQ12b"
-          />
-          <label class="form-check-label" for="formsQ12b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP13" class="prompt">
-            Instructions for groups or sections MUST NOT rely solely on
-            references to sensory characteristics.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ13"
-            id="formsQ13a"
-          />
-          <label class="form-check-label" for="formsQ13a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ13"
-            id="formsQ13b"
-          />
-          <label class="form-check-label" for="formsQ13b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP14" class="prompt">
-            Instructions for an element MUST be programmatically-associated with
-            the element.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ14"
-            id="formsQ14a"
-          />
-          <label class="form-check-label" for="formsQ14a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ14"
-            id="formsQ14b"
-          />
-          <label class="form-check-label" for="formsQ14b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP15" class="prompt">
-            Instructions for an element MUST be available as
-            programmatically-discernible text.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ15"
-            id="formsQ15a"
-          />
-          <label class="form-check-label" for="formsQ15a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ15"
-            id="formsQ15b"
-          />
-          <label class="form-check-label" for="formsQ15b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP16" class="prompt">
-            Instructions for an element MUST be meaningful.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ16"
-            id="formsQ16a"
-          />
-          <label class="form-check-label" for="formsQ16a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ16"
-            id="formsQ16b"
-          />
-          <label class="form-check-label" for="formsQ16b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP17" class="prompt">
-            If the instructions for an element are not critical, the
-            instructions MAY be hidden until the user requests them.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ17"
-            id="formsQ17a"
-          />
-          <label class="form-check-label" for="formsQ17a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ17"
-            id="formsQ17b"
-          />
-          <label class="form-check-label" for="formsQ17b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP18" class="prompt">
-            Focusing on an element MUST NOT automatically trigger a change of
-            context, unless the user has been adequately advised ahead of time.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ18"
-            id="formsQ18a"
-          />
-          <label class="form-check-label" for="formsQ18a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ18"
-            id="formsQ18b"
-          />
-          <label class="form-check-label" for="formsQ18b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP19" class="prompt">
-            Changing an element's value MUST NOT automatically trigger a change
-            of context, unless the user is adequately advised ahead of time.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ19"
-            id="formsQ19a"
-          />
-          <label class="form-check-label" for="formsQ19a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ19"
-            id="formsQ19b"
-          />
-          <label class="form-check-label" for="formsQ19b">
-            Non-compliant
-          </label>
-        </div>
-
-        <h3 id="formsHeader3">Form Feedback</h3>
-
-        <div class="form-check">
-          <div id="formsP20" class="prompt">
-            Error feedback MUST be programmatically-associated with the
-            appropriate element.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ20"
-            id="formsQ20a"
-          />
-          <label class="form-check-label" for="formsQ20a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ20"
-            id="formsQ20b"
-          />
-          <label class="form-check-label" for="formsQ20b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP21" class="prompt">
-            Error feedback MUST be programmatically-discernible.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ21"
-            id="formsQ21a"
-          />
-          <label class="form-check-label" for="formsQ21a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ21"
-            id="formsQ21b"
-          />
-          <label class="form-check-label" for="formsQ21b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="formsP22" class="prompt">
-            Error feedback MUST be meaningful.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ22"
-            id="formsQ22a"
-          />
-          <label class="form-check-label" for="formsQ22a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="formsQ22"
-            id="formsQ22b"
-          />
-          <label class="form-check-label" for="formsQ22b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="input-group">
-          <span id="formsP23" class="input-group-text">Forms: Comments</span>
-          <textarea
-            class="form-control"
-            aria-label="Comments on forms"
-            id="formsComments"
-          ></textarea>
-        </div>
-      </section>
-      <!--Tables-->
-      <section
-        class="mydiv hidden row gy-3"
-        id="tablez"
-        aria-labelledby="tablesHeader"
-      >
-        <h2 id="tablesHeader">Tables</h2>
-
-        <!-- Tables -->
-
-        <div class="form-check">
-          <div id="tablesP1" class="prompt">
-            Tabular data should be represented in a table
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="tableQ1"
-            id="tableQ1a"
-          />
-          <label class="form-check-label" for="tableQ1a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="tableQ1"
-            id="tableQ1b"
-          />
-          <label class="form-check-label" for="tableQ1b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="tablesP2" class="prompt">
-            Data tables should have a programmatic name or caption
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="tableQ2"
-            id="tableQ2a"
-          />
-          <label class="form-check-label" for="tableQ2a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="tableQ2"
-            id="tableQ2b"
-          />
-          <label class="form-check-label" for="tableQ2b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="tablesP3" class="prompt">
-            Name or caption should be accurate, unique, and succinct
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="tableQ3"
-            id="tableQ3a"
-          />
-          <label class="form-check-label" for="tableQ3a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="tableQ3"
-            id="tableQ3b"
-          />
-          <label class="form-check-label" for="tableQ3b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="tablesP4" class="prompt">
-            Headers should be programmatically determinable and must accurately
-            describe corresponding data cells
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="tableQ4"
-            id="tableQ4a"
-          />
-          <label class="form-check-label" for="tableQ4a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="tableQ4"
-            id="tableQ4b"
-          />
-          <label class="form-check-label" for="tableQ4b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div id="tablesP5" class="prompt">
-            A summary is provided for data tables. If provided, should make the
-            table more understandable to screen reader users.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="tableQ5"
-            id="tableQ5a"
-          />
-          <label class="form-check-label" for="tableQ5a"> True </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="tableQ5"
-            id="tableQ5b"
-          />
-          <label class="form-check-label" for="tableQ5b"> False </label>
-        </div>
-
-        <div class="input-group">
-          <span id="tablesP6" class="input-group-text">Tables: Comments</span>
-          <textarea
-            class="form-control"
-            aria-label="Comments on tables"
-            id="tablesComments"
-          ></textarea>
-        </div>
-      </section>
-      <!--Images-->
-      <section
-        class="mydiv hidden row gy-3"
-        id="imagez"
-        aria-labelledby="imagesHeader"
-      >
-        <h2 id="imagesHeader">Images</h2>
-
-        <!-- Images -->
-
-        <div class="form-check">
-          <div id="imagesP1" class="prompt">
-            Images that convey content MUST have programmatically-discernible
-            alternative text
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="imagesQ1"
-            id="imagesQ1a"
-          />
-          <label class="form-check-label" for="imagesQ1a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="imagesQ1"
-            id="imagesQ1b"
-          />
-          <label class="form-check-label" for="imagesQ1b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="imagesP2" class="prompt">
-            The alternative text for informative images MUST be meaningful
-            (accurately conveying the purpose of the image and the author's
-            intent in a way that is useful to those who cannot see the image)
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="imagesQ2"
-            id="imagesQ2a"
-          />
-          <label class="form-check-label" for="imagesQ2a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="imagesQ2"
-            id="imagesQ2b"
-          />
-          <label class="form-check-label" for="imagesQ2b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="imagesP3" class="prompt">
-            Alternative text SHOULD NOT include words that identify the element
-            as a graphic or image
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="imagesQ3"
-            id="imagesQ3a"
-          />
-          <label class="form-check-label" for="imagesQ3a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="imagesQ3"
-            id="imagesQ3b"
-          />
-          <label class="form-check-label" for="imagesQ3b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="imagesP4" class="prompt">
-            The length of the alternative text for informative images SHOULD be
-            concise (no more than about 250 characters)
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="imagesQ4"
-            id="imagesQ4a"
-          />
-          <label class="form-check-label" for="imagesQ4a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="imagesQ4"
-            id="imagesQ4b"
-          />
-          <label class="form-check-label" for="imagesQ4b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="input-group">
-          <span id="imagesP5" class="input-group-text">Images: Comments</span>
-          <textarea
-            class="form-control"
-            aria-label="Comments on images"
-            id="imagesComments"
-          ></textarea>
-        </div>
-      </section>
-      <!-- Regions -->
-      <section
-        class="mydiv hidden row gy-3"
-        id="regionz"
-        aria-labelledby="regionHeader"
-      >
-        <h2 id="regionHeader">Region Landmark</h2>
-
-        <!-- Regions -->
-
-        <div class="form-check">
-          <div id="regionP1" class="prompt">
-            Used to designate predetermined parts of the layout
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="regionQ1"
-            id="regionQ1a"
-          />
-          <label class="form-check-label" for="regionQ1a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="regionQ1"
-            id="regionQ1b"
-          />
-          <label class="form-check-label" for="regionQ1b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="regionP2" class="prompt">
-            All text should be contained within a landmark region
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="regionQ2"
-            id="regionQ2a"
-          />
-          <label class="form-check-label" for="regionQ2a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="regionQ2"
-            id="regionQ2b"
-          />
-          <label class="form-check-label" for="regionQ2b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="regionP3" class="prompt">
-            Multiple instances of the same landmark have different names
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="regionQ3"
-            id="regionQ3a"
-          />
-          <label class="form-check-label" for="regionQ3a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="regionQ3"
-            id="regionQ3b"
-          />
-          <label class="form-check-label" for="regionQ3b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="regionP4" class="prompt">
-            No duplicates of banner, main, or contentinfo (footer) landmarks
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="regionQ4"
-            id="regionQ4a"
-          />
-          <label class="form-check-label" for="regionQ4a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="regionQ4"
-            id="regionQ4b"
-          />
-          <label class="form-check-label" for="regionQ4b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="form-check">
-          <div id="regionP5" class="prompt">
-            Number of landmarks is minimized
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="regionQ5"
-            id="regionQ5a"
-          />
-          <label class="form-check-label" for="regionQ5a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="regionQ5"
-            id="regionQ5b"
-          />
-          <label class="form-check-label" for="regionQ5b">
-            Non-compliant
-          </label>
-        </div>
-        <div class="input-group">
-          <span id="regionP6" class="input-group-text"
-            >Region Landmarks: Comments</span
+      <!-- Forms -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFive"
+            aria-expanded="false"
+            aria-controls="collapseFive"
           >
-          <textarea
-            class="form-control"
-            aria-label="Comments on Region Landmarks"
-            id="regionComments"
-          ></textarea>
+            Forms
+          </button>
+        </h2>
+        <div
+          id="collapseFive"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="formsHeader">Forms</h2>
+
+            <!-- Forms -->
+
+            <h3 id="formsHeader1">Form Labels</h3>
+
+            <div class="form-check">
+              <h4 id="formsP1" class="prompt">
+                Labels are programmatically-discernible.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ1"
+                id="formsQ1a"
+              />
+              <label class="form-check-label" for="formsQ1a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ1"
+                id="formsQ1b"
+              />
+              <label class="form-check-label" for="formsQ1b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP2" class="prompt">Labels are be meaningful.</h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ2"
+                id="formsQ2a"
+              />
+              <label class="form-check-label" for="formsQ2a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ2"
+                id="formsQ2b"
+              />
+              <label class="form-check-label" for="formsQ2b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP3" class="prompt">
+                Placeholder text is not the only method of providing a label for
+                a text input.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ3"
+                id="formsQ3a"
+              />
+              <label class="form-check-label" for="formsQ3a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ3"
+                id="formsQ3b"
+              />
+              <label class="form-check-label" for="formsQ3b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP4" class="prompt">
+                Labels are adjacent in the DOM to its corresponding element.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ4"
+                id="formsQ4a"
+              />
+              <label class="form-check-label" for="formsQ4a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ4"
+                id="formsQ4b"
+              />
+              <label class="form-check-label" for="formsQ4b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP5" class="prompt">
+                When multiple labels are used for one element, each label MUST
+                be programmatically associated with the corresponding element.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ5"
+                id="formsQ5a"
+              />
+              <label class="form-check-label" for="formsQ5a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ5"
+                id="formsQ5b"
+              />
+              <label class="form-check-label" for="formsQ5b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP6" class="prompt">
+                When one label is used for multiple elements, the label MUST be
+                programmatically associated with each of the corresponding
+                elements.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ6"
+                id="formsQ6a"
+              />
+              <label class="form-check-label" for="formsQ6a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ6"
+                id="formsQ6b"
+              />
+              <label class="form-check-label" for="formsQ6b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP7" class="prompt">
+                Group labels MUST be programmatically-associated with the group
+                if the individual labels for each element in the group are
+                insufficient on their own.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ7"
+                id="formsQ7a"
+              />
+              <label class="form-check-label" for="formsQ7a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ7"
+                id="formsQ7b"
+              />
+              <label class="form-check-label" for="formsQ7b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP8" class="prompt">
+                Group labels MUST be programmatically-discernible.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ8"
+                id="formsQ8a"
+              />
+              <label class="form-check-label" for="formsQ8a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ8"
+                id="formsQ8b"
+              />
+              <label class="form-check-label" for="formsQ8b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP9" class="prompt">
+                Group labels MUST be meaningful.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ9"
+                id="formsQ9a"
+              />
+              <label class="form-check-label" for="formsQ9a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ9"
+                id="formsQ9b"
+              />
+              <label class="form-check-label" for="formsQ9b">
+                Non-compliant
+              </label>
+            </div>
+
+            <h3 id="formsHeader2">Form Instructions</h3>
+
+            <div class="form-check">
+              <h4 id="formsP10" class="prompt">
+                Instructions for groups or sections MUST be
+                programmatically-discernible.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ10"
+                id="formsQ10a"
+              />
+              <label class="form-check-label" for="formsQ1a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ10"
+                id="formsQ10b"
+              />
+              <label class="form-check-label" for="formsQ10b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP11" class="prompt">
+                Instructions for groups or sections MUST be meaningful.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ11"
+                id="formsQ11a"
+              />
+              <label class="form-check-label" for="formsQ11a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ11"
+                id="formsQ11b"
+              />
+              <label class="form-check-label" for="formsQ11b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP12" class="prompt">
+                If the instructions for groups or sections are not critical, the
+                instructions MAY be hidden until the user requests them.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ12"
+                id="formsQ12a"
+              />
+              <label class="form-check-label" for="formsQ12a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ12"
+                id="formsQ12b"
+              />
+              <label class="form-check-label" for="formsQ12b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP13" class="prompt">
+                Instructions for groups or sections MUST NOT rely solely on
+                references to sensory characteristics.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ13"
+                id="formsQ13a"
+              />
+              <label class="form-check-label" for="formsQ13a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ13"
+                id="formsQ13b"
+              />
+              <label class="form-check-label" for="formsQ13b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP14" class="prompt">
+                Instructions for an element MUST be programmatically-associated
+                with the element.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ14"
+                id="formsQ14a"
+              />
+              <label class="form-check-label" for="formsQ14a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ14"
+                id="formsQ14b"
+              />
+              <label class="form-check-label" for="formsQ14b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP15" class="prompt">
+                Instructions for an element MUST be available as
+                programmatically-discernible text.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ15"
+                id="formsQ15a"
+              />
+              <label class="form-check-label" for="formsQ15a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ15"
+                id="formsQ15b"
+              />
+              <label class="form-check-label" for="formsQ15b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP16" class="prompt">
+                Instructions for an element MUST be meaningful.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ16"
+                id="formsQ16a"
+              />
+              <label class="form-check-label" for="formsQ16a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ16"
+                id="formsQ16b"
+              />
+              <label class="form-check-label" for="formsQ16b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP17" class="prompt">
+                If the instructions for an element are not critical, the
+                instructions MAY be hidden until the user requests them.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ17"
+                id="formsQ17a"
+              />
+              <label class="form-check-label" for="formsQ17a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ17"
+                id="formsQ17b"
+              />
+              <label class="form-check-label" for="formsQ17b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP18" class="prompt">
+                Focusing on an element MUST NOT automatically trigger a change
+                of context, unless the user has been adequately advised ahead of
+                time.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ18"
+                id="formsQ18a"
+              />
+              <label class="form-check-label" for="formsQ18a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ18"
+                id="formsQ18b"
+              />
+              <label class="form-check-label" for="formsQ18b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP19" class="prompt">
+                Changing an element's value MUST NOT automatically trigger a
+                change of context, unless the user is adequately advised ahead
+                of time.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ19"
+                id="formsQ19a"
+              />
+              <label class="form-check-label" for="formsQ19a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ19"
+                id="formsQ19b"
+              />
+              <label class="form-check-label" for="formsQ19b">
+                Non-compliant
+              </label>
+            </div>
+
+            <h3 id="formsHeader3">Form Feedback</h3>
+
+            <div class="form-check">
+              <h4 id="formsP20" class="prompt">
+                Error feedback MUST be programmatically-associated with the
+                appropriate element.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ20"
+                id="formsQ20a"
+              />
+              <label class="form-check-label" for="formsQ20a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ20"
+                id="formsQ20b"
+              />
+              <label class="form-check-label" for="formsQ20b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP21" class="prompt">
+                Error feedback MUST be programmatically-discernible.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ21"
+                id="formsQ21a"
+              />
+              <label class="form-check-label" for="formsQ21a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ21"
+                id="formsQ21b"
+              />
+              <label class="form-check-label" for="formsQ21b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h4 id="formsP22" class="prompt">
+                Error feedback MUST be meaningful.
+              </h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ22"
+                id="formsQ22a"
+              />
+              <label class="form-check-label" for="formsQ22a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="formsQ22"
+                id="formsQ22b"
+              />
+              <label class="form-check-label" for="formsQ22b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="input-group">
+              <h4 id="formsP23" class="input-group-text">Forms: Comments</h4>
+              <textarea
+                class="form-control"
+                aria-label="Comments on forms"
+                id="formsComments"
+              ></textarea>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Tables -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseSix"
+            aria-expanded="false"
+            aria-controls="collapseSix"
+          >
+            Tables
+          </button>
+        </h2>
+        <div
+          id="collapseSix"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="tablesHeader">Tables</h2>
+
+            <!-- Tables -->
+
+            <div class="form-check">
+              <h3 id="tablesP1" class="prompt">
+                Tabular data should be represented in a table
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="tableQ1"
+                id="tableQ1a"
+              />
+              <label class="form-check-label" for="tableQ1a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="tableQ1"
+                id="tableQ1b"
+              />
+              <label class="form-check-label" for="tableQ1b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="tablesP2" class="prompt">
+                Data tables should have a programmatic name or caption
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="tableQ2"
+                id="tableQ2a"
+              />
+              <label class="form-check-label" for="tableQ2a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="tableQ2"
+                id="tableQ2b"
+              />
+              <label class="form-check-label" for="tableQ2b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="tablesP3" class="prompt">
+                Name or caption should be accurate, unique, and succinct
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="tableQ3"
+                id="tableQ3a"
+              />
+              <label class="form-check-label" for="tableQ3a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="tableQ3"
+                id="tableQ3b"
+              />
+              <label class="form-check-label" for="tableQ3b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="tablesP4" class="prompt">
+                Headers should be programmatically determinable and must
+                accurately describe corresponding data cells
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="tableQ4"
+                id="tableQ4a"
+              />
+              <label class="form-check-label" for="tableQ4a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="tableQ4"
+                id="tableQ4b"
+              />
+              <label class="form-check-label" for="tableQ4b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="tablesP5" class="prompt">
+                A summary is provided for data tables. If provided, should make
+                the table more understandable to screen reader users.
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="tableQ5"
+                id="tableQ5a"
+              />
+              <label class="form-check-label" for="tableQ5a"> True </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="tableQ5"
+                id="tableQ5b"
+              />
+              <label class="form-check-label" for="tableQ5b"> False </label>
+            </div>
+
+            <div class="input-group">
+              <span id="tablesP6" class="input-group-text"
+                >Tables: Comments</span
+              >
+              <textarea
+                class="form-control"
+                aria-label="Comments on tables"
+                id="tablesComments"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Images -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseSeven"
+            aria-expanded="false"
+            aria-controls="collapseSeven"
+          >
+            Images
+          </button>
+        </h2>
+        <div
+          id="collapseSeven"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="imagesHeader">Images</h2>
+
+            <!-- Images -->
+
+            <div class="form-check">
+              <h3 id="imagesP1" class="prompt">
+                Images that convey content MUST have
+                programmatically-discernible alternative text
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="imagesQ1"
+                id="imagesQ1a"
+              />
+              <label class="form-check-label" for="imagesQ1a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="imagesQ1"
+                id="imagesQ1b"
+              />
+              <label class="form-check-label" for="imagesQ1b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="imagesP2" class="prompt">
+                The alternative text for informative images MUST be meaningful
+                (accurately conveying the purpose of the image and the author's
+                intent in a way that is useful to those who cannot see the
+                image)
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="imagesQ2"
+                id="imagesQ2a"
+              />
+              <label class="form-check-label" for="imagesQ2a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="imagesQ2"
+                id="imagesQ2b"
+              />
+              <label class="form-check-label" for="imagesQ2b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="imagesP3" class="prompt">
+                Alternative text SHOULD NOT include words that identify the
+                element as a graphic or image
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="imagesQ3"
+                id="imagesQ3a"
+              />
+              <label class="form-check-label" for="imagesQ3a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="imagesQ3"
+                id="imagesQ3b"
+              />
+              <label class="form-check-label" for="imagesQ3b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="imagesP4" class="prompt">
+                The length of the alternative text for informative images SHOULD
+                be concise (no more than about 250 characters)
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="imagesQ4"
+                id="imagesQ4a"
+              />
+              <label class="form-check-label" for="imagesQ4a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="imagesQ4"
+                id="imagesQ4b"
+              />
+              <label class="form-check-label" for="imagesQ4b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="input-group">
+              <h3 id="imagesP5" class="input-group-text">Images: Comments</h3>
+              <textarea
+                class="form-control"
+                aria-label="Comments on images"
+                id="imagesComments"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Region Landmarks -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseEight"
+            aria-expanded="false"
+            aria-controls="collapseEight"
+          >
+            Region Landmarks
+          </button>
+        </h2>
+        <div
+          id="collapseEight"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="regionHeader">Region Landmark</h2>
+
+            <!-- Regions -->
+
+            <div class="form-check">
+              <h3 id="regionP1" class="prompt">
+                Used to designate predetermined parts of the layout
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="regionQ1"
+                id="regionQ1a"
+              />
+              <label class="form-check-label" for="regionQ1a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="regionQ1"
+                id="regionQ1b"
+              />
+              <label class="form-check-label" for="regionQ1b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="regionP2" class="prompt">
+                All text should be contained within a landmark region
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="regionQ2"
+                id="regionQ2a"
+              />
+              <label class="form-check-label" for="regionQ2a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="regionQ2"
+                id="regionQ2b"
+              />
+              <label class="form-check-label" for="regionQ2b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="regionP3" class="prompt">
+                Multiple instances of the same landmark have different names
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="regionQ3"
+                id="regionQ3a"
+              />
+              <label class="form-check-label" for="regionQ3a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="regionQ3"
+                id="regionQ3b"
+              />
+              <label class="form-check-label" for="regionQ3b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="regionP4" class="prompt">
+                No duplicates of banner, main, or contentinfo (footer) landmarks
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="regionQ4"
+                id="regionQ4a"
+              />
+              <label class="form-check-label" for="regionQ4a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="regionQ4"
+                id="regionQ4b"
+              />
+              <label class="form-check-label" for="regionQ4b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 id="regionP5" class="prompt">
+                Number of landmarks is minimized
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="regionQ5"
+                id="regionQ5a"
+              />
+              <label class="form-check-label" for="regionQ5a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="regionQ5"
+                id="regionQ5b"
+              />
+              <label class="form-check-label" for="regionQ5b">
+                Non-compliant
+              </label>
+            </div>
+            <div class="input-group">
+              <h3 id="regionP6" class="input-group-text">
+                Region Landmarks: Comments
+              </h3>
+              <textarea
+                class="form-control"
+                aria-label="Comments on Region Landmarks"
+                id="regionComments"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Media -->
-      <section
-        class="mydiv hidden row gy-3"
-        id="mediaz"
-        aria-labelledby="mediaHeader"
-      >
-        <h2 id="mediaHeader">Media</h2>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseNine"
+            aria-expanded="false"
+            aria-controls="collapseNine"
+          >
+            Media
+          </button>
+        </h2>
+        <div
+          id="collapseNine"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="mediaHeader">Media</h2>
 
-        <!-- Media -->
+            <!-- Media -->
 
-        <div class="form-check">
-          <div class="prompt" id="mediaP1">
-            Media player functionality is operable with the keyboard and AT
+            <div class="form-check">
+              <h3 class="prompt" id="mediaP1">
+                Media player functionality is operable with the keyboard and AT
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ1"
+                id="mediaQ1a"
+              />
+              <label class="form-check-label" for="mediaQ1a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ1"
+                id="mediaQ1b"
+              />
+              <label class="form-check-label" for="mediaQ1b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 class="prompt" id="mediaP2">
+                Controls must have correct names, roles, values
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ2"
+                id="mediaQ2a"
+              />
+              <label class="form-check-label" for="mediaQ2a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ2"
+                id="mediaQ2b"
+              />
+              <label class="form-check-label" for="mediaQ2b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 class="prompt" id="mediaP3">
+                Controls must give state (ie selected, pressed, expanded)
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ3"
+                id="mediaQ3a"
+              />
+              <label class="form-check-label" for="mediaQ3a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ3"
+                id="mediaQ3b"
+              />
+              <label class="form-check-label" for="mediaQ3b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="form-check">
+              <h3 class="prompt" id="mediaP4">Transcripts are available</h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ4"
+                id="mediaQ4a"
+              />
+              <label class="form-check-label" for="mediaQ4a"> True </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ4"
+                id="mediaQ4b"
+              />
+              <label class="form-check-label" for="mediaQ4b"> False </label>
+            </div>
+
+            <div class="form-check">
+              <h3 class="prompt" id="mediaP5">
+                Closed caption controls are available
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ5"
+                id="mediaQ5a"
+              />
+              <label class="form-check-label" for="mediaQ5a"> True </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ5"
+                id="mediaQ5b"
+              />
+              <label class="form-check-label" for="mediaQ5b"> False </label>
+            </div>
+
+            <div class="form-check">
+              <h3 class="prompt" id="mediaP6">
+                Audio Description (AD) is available
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ6"
+                id="mediaQ6a"
+              />
+              <label class="form-check-label" for="mediaQ6a"> True </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ6"
+                id="mediaQ6b"
+              />
+              <label class="form-check-label" for="mediaQ6b"> False </label>
+            </div>
+
+            <div class="form-check">
+              <div class="prompt" id="mediaP7">Content does not auto-play</div>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ7"
+                id="mediaQ7a"
+              />
+              <label class="form-check-label" for="mediaQ7a"> True </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ7"
+                id="mediaQ7b"
+              />
+              <label class="form-check-label" for="mediaQ7b"> False </label>
+            </div>
+
+            <div class="form-check">
+              <h3 class="prompt" id="mediaP8">
+                Time based media alternative available
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ8"
+                id="mediaQ8a"
+              />
+              <label class="form-check-label" for="mediaQ8a"> True </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mediaQ8"
+                id="mediaQ8b"
+              />
+              <label class="form-check-label" for="mediaQ8b"> False </label>
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-text" id="mediaP9">Media: Comments</span>
+              <textarea
+                class="form-control"
+                aria-label="Comments on embedded media"
+                id="mediaComments"
+              ></textarea>
+            </div>
           </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ1"
-            id="mediaQ1a"
-          />
-          <label class="form-check-label" for="mediaQ1a"> Compliant </label>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ1"
-            id="mediaQ1b"
-          />
-          <label class="form-check-label" for="mediaQ1b"> Non-compliant </label>
-        </div>
+      </div>
 
-        <div class="form-check">
-          <div class="prompt" id="mediaP2">
-            Controls must have correct names, roles, values
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ2"
-            id="mediaQ2a"
-          />
-          <label class="form-check-label" for="mediaQ2a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ2"
-            id="mediaQ2b"
-          />
-          <label class="form-check-label" for="mediaQ2b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div class="prompt" id="mediaP3">
-            Controls must give state (ie selected, pressed, expanded)
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ3"
-            id="mediaQ3a"
-          />
-          <label class="form-check-label" for="mediaQ3a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ3"
-            id="mediaQ3b"
-          />
-          <label class="form-check-label" for="mediaQ3b"> Non-compliant </label>
-        </div>
-
-        <div class="form-check">
-          <div class="prompt" id="mediaP4">Transcripts are available</div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ4"
-            id="mediaQ4a"
-          />
-          <label class="form-check-label" for="mediaQ4a"> True </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ4"
-            id="mediaQ4b"
-          />
-          <label class="form-check-label" for="mediaQ4b"> False </label>
-        </div>
-
-        <div class="form-check">
-          <div class="prompt" id="mediaP5">
-            Closed caption controls are available
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ5"
-            id="mediaQ5a"
-          />
-          <label class="form-check-label" for="mediaQ5a"> True </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ5"
-            id="mediaQ5b"
-          />
-          <label class="form-check-label" for="mediaQ5b"> False </label>
-        </div>
-
-        <div class="form-check">
-          <div class="prompt" id="mediaP6">
-            Audio Description (AD) is available
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ6"
-            id="mediaQ6a"
-          />
-          <label class="form-check-label" for="mediaQ6a"> True </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ6"
-            id="mediaQ6b"
-          />
-          <label class="form-check-label" for="mediaQ6b"> False </label>
-        </div>
-
-        <div class="form-check">
-          <div class="prompt" id="mediaP7">Content does not auto-play</div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ7"
-            id="mediaQ7a"
-          />
-          <label class="form-check-label" for="mediaQ7a"> True </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ7"
-            id="mediaQ7b"
-          />
-          <label class="form-check-label" for="mediaQ7b"> False </label>
-        </div>
-
-        <div class="form-check">
-          <div class="prompt" id="mediaP8">
-            Time based media alternative available
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ8"
-            id="mediaQ8a"
-          />
-          <label class="form-check-label" for="mediaQ8a"> True </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="mediaQ8"
-            id="mediaQ8b"
-          />
-          <label class="form-check-label" for="mediaQ8b"> False </label>
-        </div>
-
-        <div class="input-group">
-          <span class="input-group-text" id="mediaP9">Media: Comments</span>
-          <textarea
-            class="form-control"
-            aria-label="Comments on embedded media"
-            id="mediaComments"
-          ></textarea>
-        </div>
-      </section>
       <!-- Status Messages -->
-      <section
-        class="mydiv hidden row gy-3"
-        id="statuz"
-        aria-labelledby="statusHeader"
-      >
-        <h2 id="statusHeader">Status Messages</h2>
-
-        <!-- Status Messages -->
-
-        <div class="form-check">
-          <div id="statusP1" class="prompt">
-            Status messages are programmatically determinable through role or
-            properties such that they can be presented to the user by assistive
-            technologies without receiving focus.
-          </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="statusQ1"
-            id="statusQ1a"
-          />
-          <label class="form-check-label" for="statusQ1a"> Compliant </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="statusQ1"
-            id="statusQ1b"
-          />
-          <label class="form-check-label" for="statusQ1b">
-            Non-compliant
-          </label>
-        </div>
-
-        <div class="input-group">
-          <span id="statusP2" class="input-group-text"
-            >Status Messages: Comments</span
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTen"
+            aria-expanded="false"
+            aria-controls="collapseTen"
           >
-          <textarea
-            class="form-control"
-            aria-label="Comments on Status Messages"
-            id="statusComments"
-          ></textarea>
-        </div>
-      </section>
-      <!--Aria announcements  -->
-      <section
-        class="mydiv hidden row gy-3"
-        id="ariaz"
-        aria-labelledby="ariaHeader"
-      >
-        <h2 id="ariaHeader">Aria Announcements</h2>
+            Status Messages
+          </button>
+        </h2>
+        <div
+          id="collapseTen"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="statusHeader">Status Messages</h2>
 
-        <!--Aria announcements  -->
+            <!-- Status Messages -->
 
-        <div class="form-check">
-          <div id="ariaP1" class="prompt">
-            Aria live announcements or auto-updating content do not interrupt or
-            are overly noisy
+            <div class="form-check">
+              <h3 id="statusP1" class="prompt">
+                Status messages are programmatically determinable through role
+                or properties such that they can be presented to the user by
+                assistive technologies without receiving focus.
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="statusQ1"
+                id="statusQ1a"
+              />
+              <label class="form-check-label" for="statusQ1a">
+                Compliant
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="statusQ1"
+                id="statusQ1b"
+              />
+              <label class="form-check-label" for="statusQ1b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="input-group">
+              <h3 id="statusP2" class="input-group-text">
+                Status Messages: Comments
+              </h3>
+              <textarea
+                class="form-control"
+                aria-label="Comments on Status Messages"
+                id="statusComments"
+              ></textarea>
+            </div>
           </div>
-          <input
-            class="form-check-input"
-            type="radio"
-            name="ariaQ1"
-            id="ariaQ1a"
-          />
-          <label class="form-check-label" for="ariaQ1a"> Compliant </label>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="ariaQ1"
-            id="ariaQ1b"
-          />
-          <label class="form-check-label" for="ariaQ1b"> Non-compliant </label>
-        </div>
+      </div>
 
-        <div class="input-group">
-          <span id="ariaP2" class="input-group-text"
-            >Aria Live Announcements: Comments</span
+      <!-- ARIA Announcements -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseEleven"
+            aria-expanded="false"
+            aria-controls="collapseEleven"
           >
-          <textarea
-            class="form-control"
-            aria-label="Comments on aria live announcements"
-            id="ariaComments"
-          ></textarea>
+            ARIA Announcements
+          </button>
+        </h2>
+        <div
+          id="collapseEleven"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h2 id="ariaHeader">Aria Announcements</h2>
+
+            <!--Aria announcements  -->
+
+            <div class="form-check">
+              <h3 id="ariaP1" class="prompt">
+                Aria live announcements or auto-updating content do not
+                interrupt or are overly noisy
+              </h3>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="ariaQ1"
+                id="ariaQ1a"
+              />
+              <label class="form-check-label" for="ariaQ1a"> Compliant </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="ariaQ1"
+                id="ariaQ1b"
+              />
+              <label class="form-check-label" for="ariaQ1b">
+                Non-compliant
+              </label>
+            </div>
+
+            <div class="input-group">
+              <h3 id="ariaP2" class="input-group-text">
+                Aria Live Announcements: Comments
+              </h3>
+              <textarea
+                class="form-control"
+                aria-label="Comments on aria live announcements"
+                id="ariaComments"
+              ></textarea>
+            </div>
+          </div>
         </div>
-      </section>
-      <!--Announcement-->
-      <span
-        aria-live="assertive"
-        aria-atomic="true"
-        aria-relevant="additions removals"
-        id="whatsUp"
-        class="visually-hidden"
-      ></span>
-    </main>
+      </div>
+    </div>
 
     <contentinfo>
       <h2>Download your audit results</h2>
@@ -2001,7 +2124,6 @@
         Download results
       </button>
     </contentinfo>
-
     <!--Import Bootstrap JS-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -2107,10 +2229,6 @@
         const linkQ5 = document.getElementsByName("linkQ5");
         const linkP6 = document.getElementById("linkP6").innerHTML;
         const linkQ6 = document.getElementsByName("linkQ6");
-        const linkP7 = document.getElementById("linkP7").innerHTML;
-        const linkQ7 = document.getElementsByName("linkQ7");
-        const linkP8 = document.getElementById("linkP8").innerHTML;
-        const linkQ8 = document.getElementsByName("linkQ8");
         const linkP9 = document.getElementById("linkP9").innerHTML;
         const linkComments = document.getElementById("linkComments").value;
 
@@ -2258,12 +2376,8 @@
         const ariaComments = document.getElementById("ariaComments").value;
 
         const selectedButton = (i) => {
-          console.log(i);
-
           let optA = i[0].checked;
           let optB = i[1].checked;
-
-          console.log(optA, optB);
 
           if (optA) {
             return i[0].labels[0].innerText;
@@ -2297,42 +2411,6 @@
           " \r\n " +
           "Audit Comments: " +
           auditComments.value +
-          " \r\n " +
-          " \r\n " +
-          "Audited Areas" +
-          " \r\n " +
-          "Page Title: " +
-          pageTitleSwitch.checked +
-          " \r\n " +
-          "Headings: " +
-          headingsSwitch.checked +
-          " \r\n " +
-          "Links and Buttons: " +
-          linksSwitch.checked +
-          " \r\n " +
-          "Downloadable Documents: " +
-          docsSwitch.checked +
-          " \r\n " +
-          "Forms: " +
-          formsSwitch.checked +
-          " \r\n " +
-          "Tables: " +
-          tablesSwitch.checked +
-          " \r\n " +
-          "Images: " +
-          imagesSwitch.checked +
-          " \r\n " +
-          "Region Landmarks: " +
-          regionLandmarkSwitch.checked +
-          " \r\n " +
-          "Media: " +
-          mediaSwitch.checked +
-          " \r\n " +
-          "Status Messages: " +
-          statusMessagesSwitch.checked +
-          " \r\n " +
-          "ARIA Announcements: " +
-          liveAnnouncementsSwitch.checked +
           " \r\n " +
           " \r\n " +
           titleHeader +
@@ -2406,14 +2484,6 @@
           linkP6 +
           " - " +
           selectedButton(linkQ6) +
-          " \r\n " +
-          linkP7 +
-          " - " +
-          selectedButton(linkQ7) +
-          " \r\n " +
-          linkP8 +
-          " - " +
-          selectedButton(linkQ8) +
           " \r\n " +
           linkP9 +
           " \r\n " +
@@ -2684,7 +2754,8 @@
 
         // Convert the text to BLOB.
         const textToBLOB = new Blob([data], { type: "text/plain" });
-        const sFileName = pageId.value + " " + new Date().toDateString() + ".txt"; // The file to save the data.
+        const sFileName =
+          pageId.value + " " + new Date().toDateString() + ".txt"; // The file to save the data.
 
         let newLink = document.createElement("a");
         newLink.download = sFileName;
