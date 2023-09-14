@@ -1999,7 +1999,7 @@
 
         // This variable stores all the data.
         let data =
-`Screen Reader Audit Results 
+`${pageId} Audit Results 
          
 Name: ${name}
 Date: ${date}
@@ -2119,7 +2119,7 @@ ${ariaP2} ${ariaComments}
         // Convert the text to BLOB.
         const textToBLOB = new Blob([data], { type: "text/plain" });
         const sFileName =
-          pageId + " " + new Date().toDateString() + ".txt"; // The file to save the data.
+          pageId + " " + new Date().toDateString() + ".doc"; // The file to save the data.
 
         let newLink = document.createElement("a");
         newLink.download = sFileName;
